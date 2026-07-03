@@ -1,0 +1,364 @@
+{
+  "snapshot_id": "fp_f909b939c102",
+  "session_id": "7c18996d5e18",
+  "trigger": "module_7_social_profile",
+  "timestamp": "2026-06-29T01:21:37.438088+00:00",
+  "timestamp_unix": 1782696097.438104,
+  "entities": [
+    {
+      "id": "domain_dbe102aac2",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "7c18996d5e18",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:21:10.657721"
+    },
+    {
+      "id": "username_99cd2175108d",
+      "type": "username",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:12.948967"
+    },
+    {
+      "id": "url_4ba2e392e2e8",
+      "type": "url",
+      "value": "https://github.com/orgs/community/discussions/27606",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644167"
+    },
+    {
+      "id": "url_0182773867dc",
+      "type": "url",
+      "value": "https://www.globaldata.com/company-profile/github-inc/locations/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644669"
+    },
+    {
+      "id": "url_008ec4453ff3",
+      "type": "url",
+      "value": "https://github.com/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645072"
+    },
+    {
+      "id": "url_116b6f8033c9",
+      "type": "url",
+      "value": "https://www.clay.com/dossier/github-headquarters-office-locations",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645401"
+    },
+    {
+      "id": "url_1d117079b531",
+      "type": "url",
+      "value": "https://en.wikipedia.org/wiki/GitHub",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645742"
+    },
+    {
+      "id": "social_profile_5461f5aea55c",
+      "type": "social_profile",
+      "value": "https://steamcommunity.com/id/github.com",
+      "source": "social_scan/steam",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "steam",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://steamcommunity.com/id/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.845734"
+    },
+    {
+      "id": "social_profile_ef36f6ce3d25",
+      "type": "social_profile",
+      "value": "https://www.tiktok.com/@github.com",
+      "source": "social_scan/tiktok",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "tiktok",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://www.tiktok.com/@github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846210"
+    },
+    {
+      "id": "social_profile_2b44a91893cf",
+      "type": "social_profile",
+      "value": "https://t.me/github.com",
+      "source": "social_scan/telegram",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "telegram",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://t.me/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846695"
+    },
+    {
+      "id": "social_profile_4eb4b7261079",
+      "type": "social_profile",
+      "value": "https://twitter.com/github.com",
+      "source": "social_scan/twitter",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "twitter",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://twitter.com/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.847173"
+    },
+    {
+      "id": "url_1bb55e0aa7ca",
+      "type": "url",
+      "value": "https://www.ipaddress.com/website/github.com/",
+      "source": "duckduckgo_name_search",
+      "confidence": 0.6,
+      "metadata": {
+        "query": "github.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "NameResolver",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:24.465081"
+    },
+    {
+      "id": "username_ccdd7d4439ca",
+      "type": "username",
+      "value": "httpsgithub.comorgscommunitydiscussions27606",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:26.578400"
+    },
+    {
+      "id": "username_8c053cf6c9ec",
+      "type": "username",
+      "value": "httpswww.globaldata.comcompany-profilegithub-inclocations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:28.583251"
+    },
+    {
+      "id": "username_622a7eddf822",
+      "type": "username",
+      "value": "httpsgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:30.426690"
+    },
+    {
+      "id": "username_09438781fab1",
+      "type": "username",
+      "value": "httpswww.clay.comdossiergithub-headquarters-office-locations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:32.308022"
+    },
+    {
+      "id": "username_6c171633d9c9",
+      "type": "username",
+      "value": "httpsen.wikipedia.orgwikiGitHub",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.160275"
+    },
+    {
+      "id": "username_e34ad42c39ca",
+      "type": "username",
+      "value": "httpssteamcommunity.comidgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.848492"
+    },
+    {
+      "id": "username_06c6c6b2586b",
+      "type": "username",
+      "value": "httpswww.tiktok.comgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:35.936379"
+    },
+    {
+      "id": "pwned_prefix_count_c6e44702908b",
+      "type": "pwned_prefix_count",
+      "value": "0 occurrences pour le hash prefix 3068D",
+      "source": "hibp_kanon",
+      "confidence": 0.5,
+      "metadata": {
+        "sha1_prefix": "3068D",
+        "hit_count": 0,
+        "note": "Hash collision trouvée - ne confirme PAS que l'email a leaké, mais indique qu'un hash avec ce préfixe SHA1 est connu. Pour confirmation réelle, HIBP_API_KEY requise.",
+        "url": "https://haveibeenpwned.com/API/v3",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "BreachHunter",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:36.560948"
+    },
+    {
+      "id": "username_4165e77ae6f7",
+      "type": "username",
+      "value": "httpst.megithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:37.079598"
+    }
+  ],
+  "relationships": [],
+  "modules_run": [
+    {
+      "trigger": "module_7_social_profile",
+      "metadata": {
+        "module_id": 7,
+        "module_name": "NameResolver",
+        "trigger_entity": "https://t.me/github.com",
+        "entities_added": 0,
+        "depth": 1
+      },
+      "ts": "2026-06-29T01:21:37.438088+00:00"
+    }
+  ],
+  "geo_points": [],
+  "entity_count": 21,
+  "relationship_count": 0,
+  "geo_count": 0
+}

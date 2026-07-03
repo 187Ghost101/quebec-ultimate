@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+requests==2.32.3
+networkx==3.3
+phonenumbers==8.13.50
+Pillow==10.4.0
+python-multipart==0.0.9
+dnspython==2.6.1
+pydantic==2.9.2
+reportlab==5.0.0
+opencv-python-headless>=4.10.0.84
+numpy>=1.26

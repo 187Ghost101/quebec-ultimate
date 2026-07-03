@@ -1,0 +1,2435 @@
+{
+  "snapshot_id": "fp_b04c7590e51d",
+  "session_id": "fa6c00cd5a19",
+  "trigger": "module_4_domain",
+  "timestamp": "2026-06-29T01:24:24.047679+00:00",
+  "timestamp_unix": 1782696264.0476978,
+  "entities": [
+    {
+      "id": "domain_dbe102aac2",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "7c18996d5e18",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:21:10.657721"
+    },
+    {
+      "id": "username_99cd2175108d",
+      "type": "username",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:12.948967"
+    },
+    {
+      "id": "url_4ba2e392e2e8",
+      "type": "url",
+      "value": "https://github.com/orgs/community/discussions/27606",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644167"
+    },
+    {
+      "id": "url_0182773867dc",
+      "type": "url",
+      "value": "https://www.globaldata.com/company-profile/github-inc/locations/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644669"
+    },
+    {
+      "id": "url_008ec4453ff3",
+      "type": "url",
+      "value": "https://github.com/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645072"
+    },
+    {
+      "id": "url_116b6f8033c9",
+      "type": "url",
+      "value": "https://www.clay.com/dossier/github-headquarters-office-locations",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645401"
+    },
+    {
+      "id": "url_1d117079b531",
+      "type": "url",
+      "value": "https://en.wikipedia.org/wiki/GitHub",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645742"
+    },
+    {
+      "id": "social_profile_5461f5aea55c",
+      "type": "social_profile",
+      "value": "https://steamcommunity.com/id/github.com",
+      "source": "social_scan/steam",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "steam",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://steamcommunity.com/id/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.845734"
+    },
+    {
+      "id": "social_profile_ef36f6ce3d25",
+      "type": "social_profile",
+      "value": "https://www.tiktok.com/@github.com",
+      "source": "social_scan/tiktok",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "tiktok",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://www.tiktok.com/@github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846210"
+    },
+    {
+      "id": "social_profile_2b44a91893cf",
+      "type": "social_profile",
+      "value": "https://t.me/github.com",
+      "source": "social_scan/telegram",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "telegram",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://t.me/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846695"
+    },
+    {
+      "id": "social_profile_4eb4b7261079",
+      "type": "social_profile",
+      "value": "https://twitter.com/github.com",
+      "source": "social_scan/twitter",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "twitter",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://twitter.com/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.847173"
+    },
+    {
+      "id": "url_1bb55e0aa7ca",
+      "type": "url",
+      "value": "https://www.ipaddress.com/website/github.com/",
+      "source": "duckduckgo_name_search",
+      "confidence": 0.6,
+      "metadata": {
+        "query": "github.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "NameResolver",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:24.465081"
+    },
+    {
+      "id": "username_ccdd7d4439ca",
+      "type": "username",
+      "value": "httpsgithub.comorgscommunitydiscussions27606",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:26.578400"
+    },
+    {
+      "id": "username_8c053cf6c9ec",
+      "type": "username",
+      "value": "httpswww.globaldata.comcompany-profilegithub-inclocations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:28.583251"
+    },
+    {
+      "id": "username_622a7eddf822",
+      "type": "username",
+      "value": "httpsgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:30.426690"
+    },
+    {
+      "id": "username_09438781fab1",
+      "type": "username",
+      "value": "httpswww.clay.comdossiergithub-headquarters-office-locations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:32.308022"
+    },
+    {
+      "id": "username_6c171633d9c9",
+      "type": "username",
+      "value": "httpsen.wikipedia.orgwikiGitHub",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.160275"
+    },
+    {
+      "id": "username_e34ad42c39ca",
+      "type": "username",
+      "value": "httpssteamcommunity.comidgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.848492"
+    },
+    {
+      "id": "username_06c6c6b2586b",
+      "type": "username",
+      "value": "httpswww.tiktok.comgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:35.936379"
+    },
+    {
+      "id": "pwned_prefix_count_c6e44702908b",
+      "type": "pwned_prefix_count",
+      "value": "0 occurrences pour le hash prefix 3068D",
+      "source": "hibp_kanon",
+      "confidence": 0.5,
+      "metadata": {
+        "sha1_prefix": "3068D",
+        "hit_count": 0,
+        "note": "Hash collision trouvée - ne confirme PAS que l'email a leaké, mais indique qu'un hash avec ce préfixe SHA1 est connu. Pour confirmation réelle, HIBP_API_KEY requise.",
+        "url": "https://haveibeenpwned.com/API/v3",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "BreachHunter",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:36.560948"
+    },
+    {
+      "id": "username_4165e77ae6f7",
+      "type": "username",
+      "value": "httpst.megithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:37.079598"
+    },
+    {
+      "id": "username_41e7f084395b",
+      "type": "username",
+      "value": "httpstwitter.comgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:38.164865"
+    },
+    {
+      "id": "domain_315b5cbd66",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "fa6c00cd5a19",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:24:21.629533"
+    },
+    {
+      "id": "domain_99cd2175108d",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.126821"
+    },
+    {
+      "id": "ip_6f9d4b074601",
+      "type": "ip",
+      "value": "140.82.116.3",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 24,
+        "lat": 37.7823,
+        "lon": -122.391,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.127485"
+    },
+    {
+      "id": "mx_record_afd191c082ab",
+      "type": "mx_record",
+      "value": "github-com.mail.protection.outlook.com",
+      "source": "dns_mx_record",
+      "confidence": 1.0,
+      "metadata": {
+        "priority": 0,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.128284"
+    },
+    {
+      "id": "ns_record_56c39f5c2608",
+      "type": "ns_record",
+      "value": "ns-421.awsdns-52.com",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.128879"
+    },
+    {
+      "id": "ns_record_7161800bb549",
+      "type": "ns_record",
+      "value": "ns-1283.awsdns-32.org",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.129456"
+    },
+    {
+      "id": "ns_record_a49db0a43fd5",
+      "type": "ns_record",
+      "value": "dns1.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.130014"
+    },
+    {
+      "id": "ns_record_ec6d03b7a6d5",
+      "type": "ns_record",
+      "value": "ns-1707.awsdns-21.co.uk",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.130589"
+    },
+    {
+      "id": "ns_record_deee852837df",
+      "type": "ns_record",
+      "value": "dns2.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.131192"
+    },
+    {
+      "id": "ns_record_5f931770b70d",
+      "type": "ns_record",
+      "value": "dns3.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.131773"
+    },
+    {
+      "id": "ns_record_37b09660301f",
+      "type": "ns_record",
+      "value": "ns-520.awsdns-01.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.132441"
+    },
+    {
+      "id": "ns_record_b71d974d3c22",
+      "type": "ns_record",
+      "value": "dns4.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.133140"
+    },
+    {
+      "id": "txt_record_2a7a9538bc7f",
+      "type": "txt_record",
+      "value": "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.133731"
+    },
+    {
+      "id": "txt_record_c144d7a499fc",
+      "type": "txt_record",
+      "value": "loom-site-verification=f3787154f1154b7880e720a511ea664d",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.134392"
+    },
+    {
+      "id": "txt_record_40e7b22b48a9",
+      "type": "txt_record",
+      "value": "TAILSCALE-xOzoDvFUzZr5YYVCQFuD",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.135040"
+    },
+    {
+      "id": "txt_record_0a73c3b64208",
+      "type": "txt_record",
+      "value": "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.135689"
+    },
+    {
+      "id": "txt_record_2d5455a1b98d",
+      "type": "txt_record",
+      "value": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.136391"
+    },
+    {
+      "id": "txt_record_614e46dfaf62",
+      "type": "txt_record",
+      "value": "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.137041"
+    },
+    {
+      "id": "txt_record_1b668ca04a81",
+      "type": "txt_record",
+      "value": "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.137723"
+    },
+    {
+      "id": "txt_record_5b3334e4d124",
+      "type": "txt_record",
+      "value": "apple-domain-verification=RyQhdzTl6Z6x8ZP4",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.138808"
+    },
+    {
+      "id": "txt_record_a7b9a80d10b0",
+      "type": "txt_record",
+      "value": "MS=ms44452932",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.139587"
+    },
+    {
+      "id": "txt_record_d88e8f5ee385",
+      "type": "txt_record",
+      "value": "00Dd0000000hHE0=1TBKg000000TN2r",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.140372"
+    },
+    {
+      "id": "txt_record_0c483e467991",
+      "type": "txt_record",
+      "value": "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.141084"
+    },
+    {
+      "id": "txt_record_bb6f791c5287",
+      "type": "txt_record",
+      "value": "MS=ms58704441",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.141827"
+    },
+    {
+      "id": "txt_record_b98f6c4754e5",
+      "type": "txt_record",
+      "value": "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.142606"
+    },
+    {
+      "id": "txt_record_1c5287505054",
+      "type": "txt_record",
+      "value": "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.143409"
+    },
+    {
+      "id": "txt_record_9e707e798834",
+      "type": "txt_record",
+      "value": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.144248"
+    },
+    {
+      "id": "txt_record_5265a11b81cc",
+      "type": "txt_record",
+      "value": "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.145488"
+    },
+    {
+      "id": "spf_record_f6a0c602a41b",
+      "type": "spf_record",
+      "value": "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "type": "spf",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.146495"
+    },
+    {
+      "id": "txt_record_8c080ff415a5",
+      "type": "txt_record",
+      "value": "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.147458"
+    },
+    {
+      "id": "txt_record_f6ad4cc6ecab",
+      "type": "txt_record",
+      "value": "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.148465"
+    },
+    {
+      "id": "txt_record_5fc7383c8358",
+      "type": "txt_record",
+      "value": "anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.149424"
+    },
+    {
+      "id": "txt_record_940f1a4cace7",
+      "type": "txt_record",
+      "value": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.150460"
+    },
+    {
+      "id": "dmarc_record_dbe274d87e25",
+      "type": "dmarc_record",
+      "value": "v=DMARC1; p=quarantine; sp=reject; pct=100; rua=mailto:dmarc@github.com; ruf=mailto:dmarc@github.com; fo=1",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.151428"
+    },
+    {
+      "id": "subdomain_d82e179187d1",
+      "type": "subdomain",
+      "value": "api.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://api.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.152382"
+    },
+    {
+      "id": "subdomain_311e65e14703",
+      "type": "subdomain",
+      "value": "cdn-185-199-110-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-110-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.153303"
+    },
+    {
+      "id": "subdomain_222a86590d7a",
+      "type": "subdomain",
+      "value": "campus.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://campus.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.154261"
+    },
+    {
+      "id": "subdomain_80d7644549ee",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.155206"
+    },
+    {
+      "id": "subdomain_6fa944f35711",
+      "type": "subdomain",
+      "value": "f.cloud.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://f.cloud.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.156181"
+    },
+    {
+      "id": "subdomain_64fad229fcf3",
+      "type": "subdomain",
+      "value": "communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.157201"
+    },
+    {
+      "id": "subdomain_baaeacf8c2f4",
+      "type": "subdomain",
+      "value": "community.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://community.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.158199"
+    },
+    {
+      "id": "subdomain_5b7f48d197f1",
+      "type": "subdomain",
+      "value": "accessibility.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accessibility.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.159178"
+    },
+    {
+      "id": "subdomain_becf5a3b117d",
+      "type": "subdomain",
+      "value": "customer-stories-feed.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://customer-stories-feed.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.160200"
+    },
+    {
+      "id": "subdomain_31cd685a0c75",
+      "type": "subdomain",
+      "value": "cli.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cli.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.161245"
+    },
+    {
+      "id": "subdomain_0ccce8b6ff1c",
+      "type": "subdomain",
+      "value": "awesome-copilot.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://awesome-copilot.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.162272"
+    },
+    {
+      "id": "subdomain_e004839631d2",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.163308"
+    },
+    {
+      "id": "subdomain_636f7dfc3b04",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.164459"
+    },
+    {
+      "id": "subdomain_f0d57c0bd9b9",
+      "type": "subdomain",
+      "value": "boxen.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://boxen.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.165665"
+    },
+    {
+      "id": "subdomain_1a1dcab74fe8",
+      "type": "subdomain",
+      "value": "copilot-billing-preview.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot-billing-preview.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.166888"
+    },
+    {
+      "id": "subdomain_e05cab863e62",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.168005"
+    },
+    {
+      "id": "subdomain_3089dc7aa3db",
+      "type": "subdomain",
+      "value": "codeql.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://codeql.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.169210"
+    },
+    {
+      "id": "subdomain_99cd2175108d",
+      "type": "subdomain",
+      "value": "github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.170480"
+    },
+    {
+      "id": "subdomain_ba13028929d1",
+      "type": "subdomain",
+      "value": "accelerator.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accelerator.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.171596"
+    },
+    {
+      "id": "subdomain_8533fb824aad",
+      "type": "subdomain",
+      "value": "atom-installer.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://atom-installer.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.172856"
+    },
+    {
+      "id": "subdomain_56770c90ab8e",
+      "type": "subdomain",
+      "value": "archiveprogram.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://archiveprogram.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.174107"
+    },
+    {
+      "id": "subdomain_425857e0e535",
+      "type": "subdomain",
+      "value": "copilot.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.175328"
+    },
+    {
+      "id": "subdomain_d8275ab6ccc6",
+      "type": "subdomain",
+      "value": "t.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://t.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.176651"
+    },
+    {
+      "id": "subdomain_c2f2d04f93fd",
+      "type": "subdomain",
+      "value": "admin.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://admin.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.177950"
+    },
+    {
+      "id": "subdomain_b795cc406a58",
+      "type": "subdomain",
+      "value": "cxr.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cxr.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.179246"
+    },
+    {
+      "id": "subdomain_357470ab71b9",
+      "type": "subdomain",
+      "value": "blog-freeze.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://blog-freeze.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.180645"
+    },
+    {
+      "id": "subdomain_1add25368388",
+      "type": "subdomain",
+      "value": "alive.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://alive.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.181982"
+    },
+    {
+      "id": "subdomain_38b48fe53417",
+      "type": "subdomain",
+      "value": "copilot-reports.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot-reports.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.183336"
+    },
+    {
+      "id": "subdomain_c58684578631",
+      "type": "subdomain",
+      "value": "m.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://m.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.184732"
+    },
+    {
+      "id": "subdomain_5e1a5b5d23b7",
+      "type": "subdomain",
+      "value": "cs.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cs.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.186095"
+    },
+    {
+      "id": "subdomain_c2ff40c34a02",
+      "type": "subdomain",
+      "value": "action.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://action.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.187442"
+    },
+    {
+      "id": "subdomain_46b89aa6b4ca",
+      "type": "subdomain",
+      "value": "blog.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://blog.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.188958"
+    },
+    {
+      "id": "subdomain_2a366dedf899",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.190365"
+    },
+    {
+      "id": "subdomain_e8ff04951022",
+      "type": "subdomain",
+      "value": "brand.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://brand.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.191752"
+    },
+    {
+      "id": "subdomain_0089c7518b1b",
+      "type": "subdomain",
+      "value": "res.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://res.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.193218"
+    },
+    {
+      "id": "subdomain_6a4632c94ec1",
+      "type": "subdomain",
+      "value": "bug-bash.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://bug-bash.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.194652"
+    },
+    {
+      "id": "subdomain_7140200cac42",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.196125"
+    },
+    {
+      "id": "subdomain_39e8d12b2eaf",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.197634"
+    },
+    {
+      "id": "subdomain_a2883d9faa21",
+      "type": "subdomain",
+      "value": "codeload.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://codeload.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.199107"
+    },
+    {
+      "id": "subdomain_c638e482fa25",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.200623"
+    },
+    {
+      "id": "subdomain_1610890ca1c2",
+      "type": "subdomain",
+      "value": "asset-generator.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://asset-generator.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.202127"
+    },
+    {
+      "id": "subdomain_e91116637bff",
+      "type": "subdomain",
+      "value": "collector-cdn.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://collector-cdn.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.203622"
+    },
+    {
+      "id": "subdomain_d0a6de719fb0",
+      "type": "subdomain",
+      "value": "bounty.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://bounty.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.205415"
+    },
+    {
+      "id": "subdomain_f61a8ea6ce78",
+      "type": "subdomain",
+      "value": "classroom.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://classroom.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.207281"
+    },
+    {
+      "id": "subdomain_9b3aab4007bc",
+      "type": "subdomain",
+      "value": "collector.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://collector.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.209416"
+    },
+    {
+      "id": "subdomain_cbf2708bcfce",
+      "type": "subdomain",
+      "value": "central.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://central.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.210971"
+    },
+    {
+      "id": "subdomain_a67d2c8cab07",
+      "type": "subdomain",
+      "value": "data-science.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://data-science.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.212538"
+    },
+    {
+      "id": "subdomain_bdb878d23225",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.214136"
+    },
+    {
+      "id": "subdomain_d18ffaab6353",
+      "type": "subdomain",
+      "value": "accessibility-playbook.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accessibility-playbook.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.215600"
+    },
+    {
+      "id": "subdomain_a8d60072619b",
+      "type": "subdomain",
+      "value": "alive-staging.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://alive-staging.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.217233"
+    },
+    {
+      "id": "domain_4c1d852e5cf4",
+      "type": "domain",
+      "value": "lb-140-82-116-3-sea.github.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.218823"
+    },
+    {
+      "id": "domain_b1804859772e",
+      "type": "domain",
+      "value": "coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.220465"
+    },
+    {
+      "id": "domain_3d91c7d141b5",
+      "type": "domain",
+      "value": "autodiscover.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.222265"
+    },
+    {
+      "id": "domain_dfb6e32999c0",
+      "type": "domain",
+      "value": "cpanel.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.223867"
+    },
+    {
+      "id": "domain_794ad532eae4",
+      "type": "domain",
+      "value": "cpcalendars.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.225579"
+    },
+    {
+      "id": "domain_5acd06222ac2",
+      "type": "domain",
+      "value": "cpcontacts.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.227227"
+    },
+    {
+      "id": "domain_5d7c2eaecbea",
+      "type": "domain",
+      "value": "mail.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.229768"
+    },
+    {
+      "id": "domain_aca1ebcb99e0",
+      "type": "domain",
+      "value": "bakkta.support.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.232564"
+    },
+    {
+      "id": "domain_c1b0a90d1351",
+      "type": "domain",
+      "value": "webdisk.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.234355"
+    },
+    {
+      "id": "domain_9eedc4e6e7f7",
+      "type": "domain",
+      "value": "webmail.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.236216"
+    },
+    {
+      "id": "domain_4aa32bc728e1",
+      "type": "domain",
+      "value": "bakkta.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.237885"
+    },
+    {
+      "id": "domain_08bb6b100a56",
+      "type": "domain",
+      "value": "bakktat.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.239623"
+    },
+    {
+      "id": "domain_60ba1e0176d9",
+      "type": "domain",
+      "value": "bakktatr.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.241413"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ip_6f9d4b074601",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 140.82.116.3"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "mx_record_afd191c082ab",
+      "type": "mail_handled_by",
+      "weight": 1.0,
+      "evidence": "MX record (prio 0) → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_56c39f5c2608",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_7161800bb549",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_a49db0a43fd5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_ec6d03b7a6d5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_deee852837df",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_5f931770b70d",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns3.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_37b09660301f",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-520.awsdns-01.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_b71d974d3c22",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns4.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "spf_record_f6a0c602a41b",
+      "type": "spf_policy",
+      "weight": 1.0,
+      "evidence": "SPF record"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d82e179187d1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → api.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_311e65e14703",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-110-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_222a86590d7a",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → campus.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_80d7644549ee",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_6fa944f35711",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → f.cloud.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_64fad229fcf3",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_baaeacf8c2f4",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → community.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_5b7f48d197f1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accessibility.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_becf5a3b117d",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → customer-stories-feed.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_31cd685a0c75",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cli.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_0ccce8b6ff1c",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → awesome-copilot.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e004839631d2",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_636f7dfc3b04",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_f0d57c0bd9b9",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → boxen.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1a1dcab74fe8",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot-billing-preview.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e05cab863e62",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_3089dc7aa3db",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → codeql.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_99cd2175108d",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_ba13028929d1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accelerator.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_8533fb824aad",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → atom-installer.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_56770c90ab8e",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → archiveprogram.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_425857e0e535",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d8275ab6ccc6",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → t.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c2f2d04f93fd",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → admin.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_b795cc406a58",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cxr.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_357470ab71b9",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → blog-freeze.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1add25368388",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → alive.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_38b48fe53417",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot-reports.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c58684578631",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → m.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_5e1a5b5d23b7",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cs.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c2ff40c34a02",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → action.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_46b89aa6b4ca",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → blog.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_2a366dedf899",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e8ff04951022",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → brand.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_0089c7518b1b",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → res.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_6a4632c94ec1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → bug-bash.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_7140200cac42",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_39e8d12b2eaf",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a2883d9faa21",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → codeload.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c638e482fa25",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1610890ca1c2",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → asset-generator.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e91116637bff",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → collector-cdn.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d0a6de719fb0",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → bounty.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_f61a8ea6ce78",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → classroom.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_9b3aab4007bc",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → collector.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_cbf2708bcfce",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → central.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a67d2c8cab07",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → data-science.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_bdb878d23225",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d18ffaab6353",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accessibility-playbook.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a8d60072619b",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → alive-staging.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_4c1d852e5cf4",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_b1804859772e",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_3d91c7d141b5",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → autodiscover.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_dfb6e32999c0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpanel.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_794ad532eae4",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpcalendars.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_5acd06222ac2",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpcontacts.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_5d7c2eaecbea",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mail.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_aca1ebcb99e0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakkta.support.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_c1b0a90d1351",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → webdisk.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_9eedc4e6e7f7",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → webmail.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_4aa32bc728e1",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakkta.website.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_08bb6b100a56",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakktat.website.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_60ba1e0176d9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakktatr.website.coindream.site"
+    }
+  ],
+  "modules_run": [
+    {
+      "trigger": "module_4_domain",
+      "metadata": {
+        "module_id": 4,
+        "module_name": "UsernameSherlock",
+        "trigger_entity": "github.com",
+        "entities_added": 1,
+        "depth": 0
+      },
+      "ts": "2026-06-29T01:24:24.047679+00:00"
+    }
+  ],
+  "geo_points": [
+    {
+      "entity_id": "ip_6f9d4b074601",
+      "type": "ip",
+      "value": "140.82.116.3",
+      "lat": 37.7823,
+      "lon": -122.391,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696264.0476978
+    }
+  ],
+  "entity_count": 119,
+  "relationship_count": 74,
+  "geo_count": 1
+}

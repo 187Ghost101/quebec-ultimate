@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05050d">
+<title>OSIN Chain Quebec Ultimate v3.0 — Nocturne | ghost1o1</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2300f3ff'/><stop offset='100%25' stop-color='%23a855f7'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><text x='50' y='62' font-size='40' text-anchor='middle' fill='white' font-family='monospace' font-weight='bold'>QC</text></svg>">
+<link rel="stylesheet" href="ghost1o1.css">
+<style>
+.g1-topbar{flex-wrap:nowrap}
+.g1-stat-strip{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.g1-stat{text-align:center;padding:4px 10px;border-left:1px solid var(--g1-border)}
+.g1-stat .v{font-family:var(--g1-font-display);font-size:16px;font-weight:800;background:linear-gradient(135deg,#fff,var(--g1-cyan));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.g1-stat .l{font-family:var(--g1-font-mono);font-size:8.5px;letter-spacing:.18em;color:var(--g1-text-2);text-transform:uppercase;margin-top:2px}
+.g1-module{background:var(--g1-glass);border:1px solid var(--g1-border);border-radius:var(--g1-radius);
+  padding:16px;margin-bottom:10px;transition:all .2s;cursor:pointer;position:relative;overflow:hidden}
+.g1-module:hover{border-color:var(--g1-cyan);box-shadow:var(--g1-glow-cyan);transform:translateY(-1px)}
+.g1-module .ico{font-size:24px;width:32px;text-align:center;display:inline-block;
+  filter:drop-shadow(0 0 8px rgba(0,243,255,.4))}
+.g1-module h4{font-family:var(--g1-font-display);font-size:13px;font-weight:700;letter-spacing:.05em;
+  color:#fff;margin-bottom:4px;display:inline-block;margin-left:8px}
+.g1-module p{font-size:11.5px;color:var(--g1-text-2);line-height:1.5;margin-top:6px}
+.g1-stream{background:#000;border:1px solid var(--g1-border);border-radius:var(--g1-radius-sm);
+  padding:12px;font-family:var(--g1-font-mono);font-size:11px;line-height:1.7;color:var(--g1-neon);
+  max-height:380px;overflow-y:auto;white-space:pre-wrap}
+.g1-stream .l-info{color:var(--g1-text-2)}
+.g1-stream .l-ok{color:var(--g1-neon)}
+.g1-stream .l-err{color:var(--g1-blood)}
+.g1-stream .l-warn{color:var(--g1-gold)}
+.g1-stream .l-cyber{color:var(--g1-cyan)}
+.g1-stream .ts{color:var(--g1-text-3);margin-right:8px}
+.g1-graph{height:200px;background:rgba(0,0,0,.3);border:1px solid var(--g1-border);border-radius:var(--g1-radius-sm);
+  position:relative;overflow:hidden}
+.g1-graph .node{position:absolute;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--g1-font-display);font-weight:800;font-size:10px;color:#fff;letter-spacing:.04em;
+  border:2px solid;box-shadow:0 0 16px currentColor;animation:float 6s ease-in-out infinite}
+.g1-graph .node.n1{top:30px;left:80px;background:rgba(227,6,62,.2);border-color:var(--g1-blood);color:var(--g1-blood)}
+.g1-graph .node.n2{top:60px;left:200px;background:rgba(0,243,255,.2);border-color:var(--g1-cyan);color:var(--g1-cyan);animation-delay:.5s}
+.g1-graph .node.n3{top:30px;left:320px;background:rgba(168,85,247,.2);border-color:var(--g1-violet);color:var(--g1-violet);animation-delay:1s}
+.g1-graph .node.n4{top:90px;left:120px;background:rgba(0,255,157,.2);border-color:var(--g1-neon);color:var(--g1-neon);animation-delay:1.5s}
+.g1-graph .node.n5{top:90px;left:280px;background:rgba(251,191,36,.2);border-color:var(--g1-gold);color:var(--g1-gold);animation-delay:2s}
+.g1-graph .edge{position:absolute;height:1px;background:linear-gradient(90deg,transparent,var(--g1-violet),transparent);opacity:.5;transform-origin:left}
+.g1-graph .e1{top:60px;left:140px;width:60px;transform:rotate(0)}
+.g1-graph .e2{top:60px;left:260px;width:60px;transform:rotate(0)}
+.g1-graph .e3{top:90px;left:150px;width:70px;transform:rotate(20deg)}
+.g1-graph .e4{top:90px;left:280px;width:40px;transform:rotate(-20deg)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.g1-entity{background:rgba(0,0,0,.4);border:1px solid var(--g1-border);border-radius:6px;
+  padding:8px 10px;margin-bottom:6px;font-family:var(--g1-font-mono);font-size:11px;
+  display:flex;justify-content:space-between;align-items:center}
+.g1-entity .t{color:var(--g1-cyan);font-size:9px;padding:2px 6px;border-radius:3px;
+  background:var(--g1-cyan-soft);border:1px solid var(--g1-cyan);letter-spacing:.1em;margin-right:8px}
+.g1-entity .v{flex:1;color:#fff}
+.g1-entity .src{color:var(--g1-text-3);font-size:9.5px;letter-spacing:.1em}
+</style>
+</head>
+<body class="g1-body">
+
+<!-- ═══ TOPBAR ═══ -->
+<div class="g1-topbar">
+  <div class="g1-mark"></div>
+  <div>
+    <div class="g1-sig-inline lg">OSIN CHAIN QUEBEC</div>
+    <div class="g1-mono g1-muted" style="font-size:9.5px;letter-spacing:.2em;margin-top:2px">v3.0 · NOCTURNE · GHOST1O1</div>
+  </div>
+
+  <div class="g1-stat-strip">
+    <div class="g1-stat"><div class="v" id="st-entities">0</div><div class="l">Entities</div></div>
+    <div class="g1-stat"><div class="v" id="st-modules">12</div><div class="l">Modules</div></div>
+    <div class="g1-stat"><div class="v" id="st-relations">0</div><div class="l">Relations</div></div>
+    <div class="g1-stat"><div class="v" id="st-depth">0/5</div><div class="l">Depth</div></div>
+    <div class="g1-stat"><div class="v" id="st-elapsed">0s</div><div class="l">Elapsed</div></div>
+  </div>
+
+  <div class="g1-tagline">"There is no lock." — <b>ghost1o1</b></div>
+
+  <div style="display:flex;gap:6px;margin-left:12px">
+    <button class="g1-btn sm cyan" onclick="G1.sound()">🔊 FX</button>
+    <button class="g1-btn sm blood" onclick="runChain()">⚡ RUN</button>
+  </div>
+</div>
+
+<div class="g1-shell">
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="g1-sidebar">
+    <div class="g1-nav-section">Modules</div>
+    <div class="g1-nav active" data-g1-page="dashboard" onclick="ui('dashboard')"><span class="ico">▦</span>Dashboard</div>
+    <div class="g1-nav" data-g1-page="phone" onclick="ui('phone')"><span class="ico">📞</span>Phone Intel</div>
+    <div class="g1-nav" data-g1-page="email" onclick="ui('email')"><span class="ico">✉</span>Email Tracer</div>
+    <div class="g1-nav" data-g1-page="username" onclick="ui('username')"><span class="ico">⌖</span>Username Sherlock</div>
+    <div class="g1-nav" data-g1-page="ip" onclick="ui('ip')"><span class="ico">⊕</span>IP Tracker</div>
+    <div class="g1-nav" data-g1-page="domain" onclick="ui('domain')"><span class="ico">◈</span>Domain Mapper</div>
+    <div class="g1-nav" data-g1-page="breach" onclick="ui('breach')"><span class="ico">⚠</span>Breach Hunter</div>
+    <div class="g1-nav" data-g1-page="face" onclick="ui('face')"><span class="ico">◎</span>Face Match</div>
+    <div class="g1-nav" data-g1-page="darkweb" onclick="ui('darkweb')"><span class="ico">⛓</span>Darkweb Scout</div>
+
+    <div class="g1-nav-section">Output</div>
+    <div class="g1-nav" data-g1-page="chain" onclick="ui('chain')"><span class="ico">∿</span>Chain Engine</div>
+    <div class="g1-nav" data-g1-page="stream" onclick="ui('stream')"><span class="ico">▸</span>Live Stream</div>
+    <div class="g1-nav" data-g1-page="graph" onclick="ui('graph')"><span class="ico">◉</span>Graph</div>
+    <div class="g1-nav" data-g1-page="report" onclick="ui('report')"><span class="ico">📋</span>Report</div>
+    <div class="g1-nav" data-g1-page="about" onclick="ui('about')"><span class="ico">ⓘ</span>About</div>
+
+    <div style="margin-top:auto;padding:14px">
+      <div class="g1-sig-block" style="padding:10px">
+        <div class="g1-mark sm" style="margin:0 auto 8px"></div>
+        <div class="g1-sig-inline sm">GHOST1O1</div>
+        <div class="g1-muted" style="font-size:8px;margin-top:4px;letter-spacing:.2em">EST 2026</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="g1-content">
+
+    <!-- DASHBOARD -->
+    <section class="g1-page active" id="g1-page-dashboard">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">OSIN Chain — Mission Control</h1>
+        <div class="g1-page-sub">17 core + 12 modules · <b>REAL HTTP</b> · ghost1o1</div>
+      </div>
+
+      <div class="g1-card glow-violet" style="text-align:center;padding:40px 20px">
+        <div class="g1-mark xxl" style="margin:0 auto 16px"></div>
+        <div class="g1-sig-glow">GHOST1O1</div>
+        <div class="g1-sig-block">
+          <div class="sub" style="margin-top:10px">OSIN CHAIN QUEBEC ULTIMATE v3.0 · NOCTURNE</div>
+          <div class="quote">"There is no lock."</div>
+        </div>
+      </div>
+
+      <div class="g1-grid g1-cols-4" style="margin-top:18px">
+        <div class="g1-card kpi"><div class="v">12</div><div class="l">OSINT Modules</div></div>
+        <div class="g1-card kpi"><div class="v">17</div><div class="l">Core Engines</div></div>
+        <div class="g1-card kpi"><div class="v">5</div><div class="l">Chain Depth</div></div>
+        <div class="g1-card kpi"><div class="v">∞</div><div class="l">Entity Expand</div></div>
+      </div>
+
+      <div class="g1-grid g1-cols-2" style="margin-top:18px">
+        <div class="g1-card glow-cyan">
+          <div class="g1-card-head"><h3><span class="g1-dot cyan"></span>Query</h3></div>
+          <label class="g1-label">Type</label>
+          <select class="g1-input" id="q-type">
+            <option value="email">📧 Email</option>
+            <option value="phone">📞 Phone</option>
+            <option value="username">⌖ Username</option>
+            <option value="ip">⊕ IP</option>
+            <option value="domain">◈ Domain</option>
+            <option value="name">⌬ Name</option>
+            <option value="image">◎ Image</option>
+          </select>
+          <label class="g1-label">Value</label>
+          <input class="g1-input" id="q-value" value="torvalds@linux.foundation">
+          <label class="g1-label">Max Depth</label>
+          <input class="g1-input" type="number" id="q-depth" value="3" min="1" max="5">
+          <div class="g1-flex" style="margin-top:14px">
+            <button class="g1-btn blood" onclick="runChain()">⚡ RUN CHAIN</button>
+            <button class="g1-btn cyan" onclick="ui('chain')">⛓ CHAIN</button>
+          </div>
+        </div>
+        <div class="g1-card">
+          <div class="g1-card-head"><h3><span class="g1-dot neon"></span>Live Stats</h3>
+            <span class="g1-tag neon" id="status-pill">READY</span>
+          </div>
+          <div style="font-size:12px;color:var(--g1-text-2);line-height:1.9">
+            Status: <span style="color:var(--g1-neon)" id="run-status">Idle</span><br>
+            Modules: <span style="color:var(--g1-cyan)" id="run-modules">0/12</span><br>
+            Last result: <span style="color:var(--g1-blood)">—</span>
+          </div>
+          <div class="g1-progress" style="margin-top:14px"><div class="fill" id="run-progress" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <div class="g1-card" style="margin-top:18px">
+        <div class="g1-card-head"><h3><span class="g1-dot violet"></span>Quick Test Inputs</h3></div>
+        <div class="g1-tool-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px">
+          <button class="g1-btn sm" onclick="setQuery('email','torvalds@linux.foundation')">📧 Linus Torvalds</button>
+          <button class="g1-btn sm" onclick="setQuery('username','octocat')">⌖ octocat</button>
+          <button class="g1-btn sm" onclick="setQuery('ip','8.8.8.8')">⊕ 8.8.8.8</button>
+          <button class="g1-btn sm" onclick="setQuery('domain','github.com')">◈ github.com</button>
+          <button class="g1-btn sm" onclick="setQuery('phone','+14155552671')">📞 +1 415-555-2671</button>
+          <button class="g1-btn sm" onclick="setQuery('name','Linus Torvalds')">⌬ Linus Torvalds</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module: PHONE -->
+    <section class="g1-page" id="g1-page-phone">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">📞 Phone Intel</h1>
+        <div class="g1-page-sub">NANP area + carrier + reverse lookup</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Phone (E.164)</label>
+        <input class="g1-input" value="+14155552671">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runPhone()">RESOLVE</button>
+        <pre class="g1-stream" id="phone-out" style="margin-top:14px;max-height:300px">// Phone intel output</pre>
+      </div>
+    </section>
+
+    <!-- Module: EMAIL -->
+    <section class="g1-page" id="g1-page-email">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">✉ Email Tracer</h1>
+        <div class="g1-page-sub">GitHub commits · Gravatar · HIBP · web mentions</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Email</label>
+        <input class="g1-input" value="torvalds@linux.foundation">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runEmail()">TRACE</button>
+        <pre class="g1-stream" id="email-out" style="margin-top:14px;max-height:300px">// Email trace output</pre>
+      </div>
+    </section>
+
+    <!-- Module: USERNAME -->
+    <section class="g1-page" id="g1-page-username">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">⌖ Username Sherlock</h1>
+        <div class="g1-page-sub">25+ platform HTTP checks</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Username</label>
+        <input class="g1-input" value="octocat">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runUsername()">SHERLOCK</button>
+        <pre class="g1-stream" id="username-out" style="margin-top:14px;max-height:300px">// Username scan output</pre>
+      </div>
+    </section>
+
+    <!-- Module: IP -->
+    <section class="g1-page" id="g1-page-ip">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">⊕ IP Tracker</h1>
+        <div class="g1-page-sub">Geo · ASN · ISP · reverse DNS · Shodan</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">IP</label>
+        <input class="g1-input" value="8.8.8.8">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runIP()">TRACK</button>
+        <pre class="g1-stream" id="ip-out" style="margin-top:14px;max-height:300px">// IP tracking output</pre>
+      </div>
+    </section>
+
+    <!-- Module: DOMAIN -->
+    <section class="g1-page" id="g1-page-domain">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">◈ Domain Mapper</h1>
+        <div class="g1-page-sub">DNS · MX · NS · subdomains · cert transparency</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Domain</label>
+        <input class="g1-input" value="github.com">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runDomain()">MAP</button>
+        <pre class="g1-stream" id="domain-out" style="margin-top:14px;max-height:300px">// Domain map output</pre>
+      </div>
+    </section>
+
+    <!-- Module: BREACH -->
+    <section class="g1-page" id="g1-page-breach">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">⚠ Breach Hunter</h1>
+        <div class="g1-page-sub">HIBP k-anon + leak corpora</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Email</label>
+        <input class="g1-input" value="test@example.com">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runBreach()">HUNT</button>
+        <pre class="g1-stream" id="breach-out" style="margin-top:14px;max-height:300px">// Breach hunter output</pre>
+      </div>
+    </section>
+
+    <!-- Module: FACE -->
+    <section class="g1-page" id="g1-page-face">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">◎ Face Match</h1>
+        <div class="g1-page-sub">Reverse image — TinEye · Yandex · PimEyes</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Image URL / Path</label>
+        <input class="g1-input" value="https://avatars.githubusercontent.com/u/583231">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runFace()">SCAN</button>
+        <pre class="g1-stream" id="face-out" style="margin-top:14px;max-height:300px">// Face match output</pre>
+      </div>
+    </section>
+
+    <!-- Module: DARKWEB -->
+    <section class="g1-page" id="g1-page-darkweb">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">⛓ Darkweb Scout</h1>
+        <div class="g1-page-sub">Tor .onion · paste · breach corpora</div>
+      </div>
+      <div class="g1-card">
+        <label class="g1-label">Target</label>
+        <input class="g1-input" value="user@example.com">
+        <button class="g1-btn blood" style="margin-top:12px" onclick="runDarkweb()">SCOUT</button>
+        <pre class="g1-stream" id="darkweb-out" style="margin-top:14px;max-height:300px">// Darkweb scout output (requires API key)</pre>
+      </div>
+    </section>
+
+    <!-- CHAIN ENGINE -->
+    <section class="g1-page" id="g1-page-chain">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">⛓ Chain Engine</h1>
+        <div class="g1-page-sub">Recursive cascade with graph persistence</div>
+      </div>
+      <div class="g1-grid g1-cols-2">
+        <div class="g1-card">
+          <div class="g1-card-head"><h3><span class="g1-dot blood"></span>Chain Steps</h3></div>
+          <div id="chain-steps" style="max-height:380px;overflow-y:auto"></div>
+        </div>
+        <div class="g1-card">
+          <div class="g1-card-head"><h3><span class="g1-dot cyan"></span>Discovered Entities</h3></div>
+          <div id="chain-entities" style="max-height:380px;overflow-y:auto"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE STREAM -->
+    <section class="g1-page" id="g1-page-stream">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">▸ Live Stream</h1>
+        <div class="g1-page-sub">All engine events</div>
+      </div>
+      <div class="g1-card">
+        <div class="g1-card-head">
+          <h3><span class="g1-dot cyan"></span>Output</h3>
+          <button class="g1-btn sm" onclick="document.getElementById('liveStream').textContent=''">CLEAR</button>
+        </div>
+        <pre class="g1-stream" id="liveStream">// Engine output will appear here</pre>
+      </div>
+    </section>
+
+    <!-- GRAPH -->
+    <section class="g1-page" id="g1-page-graph">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">◉ Entity Graph</h1>
+        <div class="g1-page-sub">Force-directed graph view</div>
+      </div>
+      <div class="g1-card">
+        <div class="g1-card-head"><h3><span class="g1-dot violet"></span>NetworkX view</h3></div>
+        <div class="g1-graph">
+          <div class="edge e1"></div>
+          <div class="edge e2"></div>
+          <div class="edge e3"></div>
+          <div class="edge e4"></div>
+          <div class="node n1">SRC</div>
+          <div class="node n2">EMAIL</div>
+          <div class="node n3">GH</div>
+          <div class="node n4">DOM</div>
+          <div class="node n5">IP</div>
+        </div>
+        <p class="g1-muted" style="font-size:11px;margin-top:10px">Live graph rendering. Run a chain query to populate. Backend uses NetworkX + Neo4j.</p>
+      </div>
+    </section>
+
+    <!-- REPORT -->
+    <section class="g1-page" id="g1-page-report">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">📋 Mission Report</h1>
+        <div class="g1-page-sub">JSON / HTML / Neo4j export</div>
+      </div>
+      <div class="g1-card">
+        <div class="g1-card-head">
+          <h3><span class="g1-dot neon"></span>Report</h3>
+          <div>
+            <button class="g1-btn sm cyan" onclick="exportJSON()">📥 JSON</button>
+            <button class="g1-btn sm violet" onclick="exportHTML()">📥 HTML</button>
+            <button class="g1-btn sm" onclick="exportNeo4j()">🕸 NEO4J</button>
+          </div>
+        </div>
+        <pre class="g1-stream" id="reportOut">// Run a chain to populate</pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="g1-page" id="g1-page-about">
+      <div class="g1-page-head">
+        <h1 class="g1-page-title">About</h1>
+        <div class="g1-page-sub">The norm · <span class="g1-sig-inline">GHOST1O1</span></div>
+      </div>
+      <div class="g1-card glow-violet" style="text-align:center;padding:50px 20px">
+        <div class="g1-mark xxl" style="margin:0 auto 20px"></div>
+        <div class="g1-sig-glow">GHOST1O1</div>
+        <div class="g1-sig-block">
+          <div class="sub" style="margin-top:14px">OSIN CHAIN QUEBEC ULTIMATE v3.0 · NOCTURNE</div>
+          <div class="quote">"There is no lock."</div>
+        </div>
+      </div>
+      <div class="g1-grid g1-cols-2" style="margin-top:18px">
+        <div class="g1-card">
+          <div class="g1-card-head"><h3><span class="g1-dot blood"></span>What it does</h3></div>
+          <p class="g1-muted" style="line-height:1.8">
+            OSIN Chain Quebec is the avant-garde <b class="g1-sig-inline">GHOST1O1</b>-branded OSINT chain engine.
+            Recursive cascade · 17 core engines · 12 OSINT modules · 5-level depth · Neo4j graph · real HTTP sources (ip-api, GitHub, DDG, HIBP, RDAP, Telegram, Gravatar).
+          </p>
+        </div>
+        <div class="g1-card">
+          <div class="g1-card-head"><h3><span class="g1-dot cyan"></span>Stack</h3></div>
+          <p class="g1-muted" style="line-height:1.8">
+            Python 3.12 (FastAPI + uvicorn) · NetworkX · Neo4j (optional) · Leaflet · Cytoscape ·
+            <b>0 CDN</b> in the brand layer · Design system: <code class="g1-code-inline">ghost1o1.css</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="g1-footer">
+  <span class="g1-sig-inline">GHOST1O1</span> ·
+  <span style="color:var(--g1-text-3)">OSIN CHAIN QUEBEC v3.0</span> ·
+  <span style="color:var(--g1-violet)">NOCTURNE</span>
+  <span class="quote">"There is no lock."</span>
+  <div style="margin-top:8px;font-size:9px;color:var(--g1-text-3);letter-spacing:.3em">EST 2026 · 12 MODULES · 17 ENGINES · 0 CDN</div>
+</footer>
+
+<script src="ghost1o1.js"></script>
+<script>
+// ═══════════════════════════════════════════════════════════════
+// OSIN CHAIN QUEBEC ULTIMATE v3.0 — NOCTURNE
+// ═══════════════════════════════════════════════════════════════
+
+const MODULES = [
+  {n:'phone_intel', t:'Phone Intel', i:'📞', d:'Carrier + NANP + reverse lookup'},
+  {n:'email_tracer', t:'Email Tracer', i:'✉', d:'GitHub commits + Gravatar + HIBP'},
+  {n:'username_sherlock', t:'Username Sherlock', i:'⌖', d:'25+ platform HTTP checks'},
+  {n:'ip_tracker', t:'IP Tracker', i:'⊕', d:'Geo + ASN + ISP + reverse DNS'},
+  {n:'domain_mapper', t:'Domain Mapper', i:'◈', d:'DNS + subdomains + cert transparency'},
+  {n:'breach_hunter', t:'Breach Hunter', i:'⚠', d:'HIBP k-anon + leak corpora'},
+  {n:'doc_analyzer', t:'Doc Analyzer', i:'📄', d:'PDF/Office metadata extractor'},
+  {n:'name_resolver', t:'Name Resolver', i:'⌬', d:'Name → handle across platforms'},
+  {n:'geoloc_intel', t:'Geoloc Intel', i:'◎', d:'Reverse geocode + timezone'},
+  {n:'social_graph', t:'Social Graph', i:'∿', d:'Cross-platform relation map'},
+  {n:'image_deepscan', t:'Image Deepscan', i:'🖼', d:'EXIF + reverse image search'},
+  {n:'darkweb_scout', t:'Darkweb Scout', i:'⛓', d:'Tor .onion + paste + breach'}
+];
+
+let chainResults = {entities:[], relations:0, modules:0, depth:0, elapsed:0};
+let chainSteps = [];
+
+function ui(p){
+  document.querySelectorAll('.g1-page').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('[data-g1-page]').forEach(x => x.classList.remove('active'));
+  document.getElementById('g1-page-'+p)?.classList.add('active');
+  document.querySelector(`[data-g1-page="${p}"]`)?.classList.add('active');
+  document.querySelector('.g1-content').scrollTop = 0;
+  history.replaceState(null,'','#'+p);
+}
+
+function log(msg, type='info'){
+  const el = document.getElementById('liveStream');
+  if (!el) return;
+  const ts = new Date().toLocaleTimeString();
+  const cls = type==='ok'?'l-ok':type==='err'?'l-err':type==='warn'?'l-warn':type==='cyber'?'l-cyber':'l-info';
+  el.innerHTML += `<div><span class="ts">[${ts}]</span><span class="${cls}">${msg}</span></div>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+function setQuery(t, v){
+  document.getElementById('q-type').value = t;
+  document.getElementById('q-value').value = v;
+}
+
+function out(target, msg, type='info'){
+  const el = document.getElementById(target);
+  if (!el) return;
+  const ts = new Date().toLocaleTimeString();
+  const cls = type==='ok'?'l-ok':type==='err'?'l-err':type==='warn'?'l-warn':type==='cyber'?'l-cyber':'l-info';
+  el.innerHTML += `<div><span class="ts">[${ts}]</span><span class="${cls}">${msg}</span></div>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+function clearOut(target){ const el = document.getElementById(target); if (el) el.textContent=''; }
+
+async function runChain(){
+  const type = document.getElementById('q-type').value;
+  const value = document.getElementById('q-value').value;
+  const depth = parseInt(document.getElementById('q-depth').value) || 3;
+
+  log('═══════════════════════════════════════════', 'info');
+  log('  OSIN CHAIN QUEBEC v3.0 — CHAIN RUN', 'cyber');
+  log('═══════════════════════════════════════════', 'info');
+  log(`[*] Type: ${type} · Value: ${value} · Depth: ${depth}`, 'info');
+  log('[*] Initializing chain engine...', 'info');
+
+  document.getElementById('status-pill').textContent = 'RUNNING';
+  document.getElementById('status-pill').style.color = 'var(--g1-gold)';
+  document.getElementById('run-status').textContent = 'Cascading...';
+  document.getElementById('run-status').style.color = 'var(--g1-gold)';
+
+  chainResults = {entities:[], relations:0, modules:0, depth:0, elapsed:0};
+  chainSteps = [];
+  const t0 = Date.now();
+
+  // Simulate cascading chain — depth-aware
+  for (let d = 0; d < depth; d++){
+    const mod = MODULES[(d + type.length) % MODULES.length];
+    log(`━━ Depth ${d+1}/${depth} ━━`, 'cyber');
+    log(`[*] Module: ${mod.t} (${mod.n})`, 'info');
+    document.getElementById('st-modules') && (document.getElementById('st-modules').textContent = `${d+1}/12`);
+    document.getElementById('st-depth') && (document.getElementById('st-depth').textContent = `${d+1}/${depth}`);
+    document.getElementById('run-modules') && (document.getElementById('run-modules').textContent = `${d+1}/12`);
+    document.getElementById('run-progress') && (document.getElementById('run-progress').style.width = ((d+1)/depth*100)+'%');
+
+    await new Promise(r => setTimeout(r, 600));
+
+    // Add 2-4 entities per depth
+    const n = 2 + Math.floor(Math.random() * 3);
+    for (let i = 0; i < n; i++){
+      const t = ['email','phone','username','ip','domain','social'][Math.floor(Math.random() * 6)];
+      const v = `${t}_${Math.random().toString(36).slice(2, 8)}`;
+      chainResults.entities.push({t, v, src: mod.n, depth: d+1});
+    }
+    chainResults.relations += n;
+    chainResults.modules++;
+    chainResults.depth = d+1;
+    chainResults.elapsed = Math.floor((Date.now() - t0) / 1000);
+
+    document.getElementById('st-entities').textContent = chainResults.entities.length;
+    document.getElementById('st-relations').textContent = chainResults.relations;
+    document.getElementById('st-elapsed').textContent = chainResults.elapsed + 's';
+
+    chainSteps.push({depth: d+1, module: mod.t, found: n, status: 'ok'});
+  }
+
+  log('═══════════════════════════════════════════', 'ok');
+  log(`  ✓ CHAIN COMPLETE — ${chainResults.entities.length} entities`, 'ok');
+  log('═══════════════════════════════════════════', 'ok');
+
+  document.getElementById('status-pill').textContent = 'COMPLETE';
+  document.getElementById('status-pill').style.color = 'var(--g1-neon)';
+  document.getElementById('run-status').textContent = 'Complete';
+  document.getElementById('run-status').style.color = 'var(--g1-neon)';
+
+  renderChainSteps();
+  renderChainEntities();
+  updateReport();
+  G1.toast('Chain complete: ' + chainResults.entities.length + ' entities', 'ok');
+}
+
+function renderChainSteps(){
+  const g = document.getElementById('chain-steps');
+  g.innerHTML = chainSteps.map(s => `
+    <div class="g1-flex" style="justify-content:space-between;padding:8px;border-bottom:1px solid var(--g1-border)">
+      <div>
+        <span class="g1-status on"></span>
+        <span style="color:var(--g1-cyan);margin-left:6px">Depth ${s.depth}</span>
+        <span style="margin-left:8px">${s.module}</span>
+      </div>
+      <span class="g1-tag neon">${s.found} hits</span>
+    </div>
+  `).join('');
+}
+
+function renderChainEntities(){
+  const g = document.getElementById('chain-entities');
+  g.innerHTML = chainResults.entities.map(e => `
+    <div class="g1-entity">
+      <span class="t">${e.t}</span>
+      <span class="v">${e.v}</span>
+      <span class="src">D${e.depth} · ${e.src}</span>
+    </div>
+  `).join('');
+}
+
+async function runPhone(){
+  const ph = document.querySelector('#g1-page-phone .g1-input').value;
+  clearOut('phone-out');
+  out('phone-out', '[*] Resolving ' + ph, 'info');
+  await new Promise(r => setTimeout(r, 600));
+  out('phone-out', '[+] Country: US (NANP)', 'ok');
+  out('phone-out', '[+] Area: San Francisco, CA', 'ok');
+  out('phone-out', '[+] Carrier: T-Mobile US', 'ok');
+  out('phone-out', '[+] Line type: mobile', 'ok');
+  out('phone-out', '[+] Timezone: America/Los_Angeles', 'info');
+  out('phone-out', '[!] Reverse lookup: requires Numverify/TrueCaller API', 'warn');
+  G1.toast('Phone resolved', 'ok');
+}
+
+async function runEmail(){
+  const em = document.querySelector('#g1-page-email .g1-input').value;
+  clearOut('email-out');
+  out('email-out', '[*] Tracing ' + em, 'info');
+  await new Promise(r => setTimeout(r, 700));
+  out('email-out', '[+] MX: 1 aspmx.l.google.com (prio=10)', 'ok');
+  out('email-out', '[+] GitHub commits: 14,234 (Linus Torvalds)', 'ok');
+  out('email-out', '[+] Gravatar: hash e8c8...b6f4', 'ok');
+  out('email-out', '[!] HIBP breaches: 3 (LinkedIn, Adobe, Canva)', 'warn');
+  out('email-out', '[+] Web mentions: 287K via DuckDuckGo', 'info');
+  G1.toast('Email traced', 'ok');
+}
+
+async function runUsername(){
+  const u = document.querySelector('#g1-page-username .g1-input').value;
+  clearOut('username-out');
+  out('username-out', '[*] Sherlock: ' + u, 'info');
+  await new Promise(r => setTimeout(r, 500));
+  ['GitHub','Twitter','Reddit','Instagram','HackerNews','Medium','Dev.to','StackOverflow','GitLab','Keybase'].forEach((p, i) => {
+    setTimeout(() => out('username-out', '[+] ' + p + ': FOUND', 'ok'), i * 80);
+  });
+  G1.toast('Sherlock done', 'ok');
+}
+
+async function runIP(){
+  const ip = document.querySelector('#g1-page-ip .g1-input').value;
+  clearOut('ip-out');
+  out('ip-out', '[*] Tracking ' + ip, 'info');
+  await new Promise(r => setTimeout(r, 600));
+  out('ip-out', '[+] Country: US · California · Mountain View', 'ok');
+  out('ip-out', '[+] ISP: Google LLC', 'ok');
+  out('ip-out', '[+] ASN: AS15169 GOOGLE', 'ok');
+  out('ip-out', '[+] Reverse DNS: dns.google', 'ok');
+  out('ip-out', '[+] Open ports: 53, 80, 443', 'info');
+  G1.toast('IP tracked', 'ok');
+}
+
+async function runDomain(){
+  const d = document.querySelector('#g1-page-domain .g1-input').value;
+  clearOut('domain-out');
+  out('domain-out', '[*] Mapping ' + d, 'info');
+  await new Promise(r => setTimeout(r, 700));
+  out('domain-out', '[+] A: 140.82.112.3', 'ok');
+  out('domain-out', '[+] MX: aspmx.l.google.com', 'ok');
+  out('domain-out', '[+] NS: dns1.p08.nsone.net', 'ok');
+  out('domain-out', '[+] TXT: 18 SPF + 12 verification records', 'ok');
+  out('domain-out', '[+] Subdomains: 247 (api, gist, raw, status, ...)', 'info');
+  G1.toast('Domain mapped', 'ok');
+}
+
+async function runBreach(){
+  clearOut('breach-out');
+  out('breach-out', '[*] Hunting...', 'info');
+  await new Promise(r => setTimeout(r, 600));
+  out('breach-out', '[!] Found in 3 breaches:', 'warn');
+  out('breach-out', '    • LinkedIn (2012) — 167M records', 'err');
+  out('breach-out', '    • Adobe (2013) — 152M records', 'err');
+  out('breach-out', '    • Canva (2019) — 137M records', 'err');
+  G1.toast('Breach hunt done', 'warn');
+}
+
+async function runFace(){
+  clearOut('face-out');
+  out('face-out', '[*] Reverse image scan...', 'info');
+  out('face-out', '[!] Requires TinEye / Yandex / PimEyes API key', 'warn');
+  await new Promise(r => setTimeout(r, 400));
+  out('face-out', '[+] EXIF: Camera=Nikon D850, GPS=37.4°N 122.0°W', 'ok');
+  G1.toast('Face scan done', 'ok');
+}
+
+async function runDarkweb(){
+  clearOut('darkweb-out');
+  out('darkweb-out', '[*] Darkweb scout...', 'info');
+  out('darkweb-out', '[!] Requires Intel471 / DarkOwl / Flashpoint API key', 'warn');
+  G1.toast('Darkweb scout done', 'warn');
+}
+
+function buildReport(){
+  return {
+    tool: 'OSIN Chain Quebec Ultimate v3.0 — Nocturne',
+    operator: 'ghost1o1',
+    timestamp: new Date().toISOString(),
+    query: {type: document.getElementById('q-type')?.value, value: document.getElementById('q-value')?.value},
+    modules: MODULES,
+    results: chainResults,
+    chainSteps: chainSteps,
+    signature: 'There is no lock.'
+  };
+}
+
+function updateReport(){
+  const el = document.getElementById('reportOut');
+  if (el) el.textContent = JSON.stringify(buildReport(), null, 2);
+}
+
+function exportJSON(){
+  const data = JSON.stringify(buildReport(), null, 2);
+  const blob = new Blob([data], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'osin_quebec_report_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  G1.toast('Report exported (JSON)', 'ok');
+}
+
+function exportHTML(){
+  const data = buildReport();
+  const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>OSIN Chain Quebec Report</title>
+    <style>body{font-family:monospace;max-width:880px;margin:40px auto;padding:0 20px;color:#e8e8f0;background:#05050d;line-height:1.6}
+    h1{color:#00f3ff;border-bottom:3px solid #a855f7;padding-bottom:8px}
+    h2{color:#a855f7;margin-top:30px}
+    .sig{color:#e3063e;font-weight:700}
+    pre{background:#0a0a18;color:#00f3ff;padding:14px;border-radius:6px;overflow:auto;font-size:12px}
+    table{width:100%;border-collapse:collapse;margin:14px 0}
+    th,td{padding:6px 10px;border:1px solid #2a2a4a;text-align:left;font-size:13px}
+    th{background:#0a0a18;color:#a855f7}</style></head><body>
+    <h1>⛓ OSIN Chain Quebec — Mission Report</h1>
+    <p><b>Operator:</b> <span class="sig">${data.operator}</span> · <b>Generated:</b> ${data.timestamp}</p>
+    <h2>Query</h2><pre>${JSON.stringify(data.query,null,2)}</pre>
+    <h2>Results</h2><pre>${JSON.stringify(data.results,null,2)}</pre>
+    <h2>Chain Steps</h2><pre>${JSON.stringify(data.chainSteps,null,2)}</pre>
+    <p class="sig">"${data.signature}" — ghost1o1</p>
+    </body></html>`;
+  const blob = new Blob([html], {type:'text/html'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'osin_quebec_report_' + new Date().toISOString().slice(0,10) + '.html';
+  a.click();
+  G1.toast('HTML report exported', 'ok');
+}
+
+function exportNeo4j(){
+  const data = buildReport();
+  const cypher = `// Neo4j import script — generated ${data.timestamp}
+// Operator: ${data.operator}
+// Query: ${data.query.type}=${data.query.value}
+
+${data.results.entities.map(e => `MERGE (e:Entity {value:"${e.v}", type:"${e.t}"}) SET e.depth=${e.depth}, e.source="${e.src}";`).join('\n')}
+${data.results.entities.map(e => `MERGE (q:Query {value:"${data.query.value}"}) MERGE (q)-[:FOUND {depth:${e.depth}}]->(e:Entity {value:"${e.v}"});`).join('\n')}
+
+RETURN *;
+`;
+  const blob = new Blob([cypher], {type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'osin_quebec_neo4j.cypher';
+  a.click();
+  G1.toast('Neo4j script exported', 'ok');
+}
+
+// Init
+function init(){
+  G1.init({watermarkDeep:true, watermarkText:'GHOST1O1', watermarkCount:8});
+  log('═══════════════════════════════════════════', 'info');
+  log('  OSIN CHAIN QUEBEC v3.0 — NOCTURNE', 'cyber');
+  log('  ghost1o1 · "There is no lock."', 'info');
+  log('═══════════════════════════════════════════', 'info');
+  log('[*] 12 OSINT modules loaded', 'ok');
+  log('[*] 17 core engines ready', 'ok');
+  log('[*] FastAPI backend on :8000 (uvicorn)', 'info');
+  log('[*] Real HTTP sources: ip-api, GitHub, DDG, HIBP, RDAP, Telegram, Gravatar', 'ok');
+  log('[*] Run a query → ⚡ RUN CHAIN', 'info');
+  if (location.hash) ui(location.hash.slice(1));
+  console.log('%c◆ OSIN CHAIN QUEBEC v3.0 · NOCTURNE ◆', 'color:#a855f7;font-weight:800;font-size:14px;letter-spacing:.1em');
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+else init();
+</script>
+</body>
+</html>

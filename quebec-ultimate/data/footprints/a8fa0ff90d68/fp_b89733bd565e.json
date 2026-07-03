@@ -1,0 +1,5976 @@
+{
+  "snapshot_id": "fp_b89733bd565e",
+  "session_id": "a8fa0ff90d68",
+  "trigger": "module_5_mx_record",
+  "timestamp": "2026-06-29T01:29:09.741949+00:00",
+  "timestamp_unix": 1782696549.74196,
+  "entities": [
+    {
+      "id": "domain_dbe102aac2",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "7c18996d5e18",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:21:10.657721"
+    },
+    {
+      "id": "username_99cd2175108d",
+      "type": "username",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:12.948967"
+    },
+    {
+      "id": "url_4ba2e392e2e8",
+      "type": "url",
+      "value": "https://github.com/orgs/community/discussions/27606",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644167"
+    },
+    {
+      "id": "url_0182773867dc",
+      "type": "url",
+      "value": "https://www.globaldata.com/company-profile/github-inc/locations/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.644669"
+    },
+    {
+      "id": "url_008ec4453ff3",
+      "type": "url",
+      "value": "https://github.com/",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645072"
+    },
+    {
+      "id": "url_116b6f8033c9",
+      "type": "url",
+      "value": "https://www.clay.com/dossier/github-headquarters-office-locations",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645401"
+    },
+    {
+      "id": "url_1d117079b531",
+      "type": "url",
+      "value": "https://en.wikipedia.org/wiki/GitHub",
+      "source": "duckduckgo_geo",
+      "confidence": 0.55,
+      "metadata": {
+        "query": "github.com location",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "GeoLocIntel",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:13.645742"
+    },
+    {
+      "id": "social_profile_5461f5aea55c",
+      "type": "social_profile",
+      "value": "https://steamcommunity.com/id/github.com",
+      "source": "social_scan/steam",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "steam",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://steamcommunity.com/id/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.845734"
+    },
+    {
+      "id": "social_profile_ef36f6ce3d25",
+      "type": "social_profile",
+      "value": "https://www.tiktok.com/@github.com",
+      "source": "social_scan/tiktok",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "tiktok",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://www.tiktok.com/@github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846210"
+    },
+    {
+      "id": "social_profile_2b44a91893cf",
+      "type": "social_profile",
+      "value": "https://t.me/github.com",
+      "source": "social_scan/telegram",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "telegram",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://t.me/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.846695"
+    },
+    {
+      "id": "social_profile_4eb4b7261079",
+      "type": "social_profile",
+      "value": "https://twitter.com/github.com",
+      "source": "social_scan/twitter",
+      "confidence": 0.8,
+      "metadata": {
+        "platform": "twitter",
+        "http_status": 200,
+        "handle": "github.com",
+        "source_url": "https://twitter.com/github.com",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:16.847173"
+    },
+    {
+      "id": "url_1bb55e0aa7ca",
+      "type": "url",
+      "value": "https://www.ipaddress.com/website/github.com/",
+      "source": "duckduckgo_name_search",
+      "confidence": 0.6,
+      "metadata": {
+        "query": "github.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "NameResolver",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:24.465081"
+    },
+    {
+      "id": "username_ccdd7d4439ca",
+      "type": "username",
+      "value": "httpsgithub.comorgscommunitydiscussions27606",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:26.578400"
+    },
+    {
+      "id": "username_8c053cf6c9ec",
+      "type": "username",
+      "value": "httpswww.globaldata.comcompany-profilegithub-inclocations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:28.583251"
+    },
+    {
+      "id": "username_622a7eddf822",
+      "type": "username",
+      "value": "httpsgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:30.426690"
+    },
+    {
+      "id": "username_09438781fab1",
+      "type": "username",
+      "value": "httpswww.clay.comdossiergithub-headquarters-office-locations",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:32.308022"
+    },
+    {
+      "id": "username_6c171633d9c9",
+      "type": "username",
+      "value": "httpsen.wikipedia.orgwikiGitHub",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.160275"
+    },
+    {
+      "id": "username_e34ad42c39ca",
+      "type": "username",
+      "value": "httpssteamcommunity.comidgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:34.848492"
+    },
+    {
+      "id": "username_06c6c6b2586b",
+      "type": "username",
+      "value": "httpswww.tiktok.comgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:35.936379"
+    },
+    {
+      "id": "pwned_prefix_count_c6e44702908b",
+      "type": "pwned_prefix_count",
+      "value": "0 occurrences pour le hash prefix 3068D",
+      "source": "hibp_kanon",
+      "confidence": 0.5,
+      "metadata": {
+        "sha1_prefix": "3068D",
+        "hit_count": 0,
+        "note": "Hash collision trouvée - ne confirme PAS que l'email a leaké, mais indique qu'un hash avec ce préfixe SHA1 est connu. Pour confirmation réelle, HIBP_API_KEY requise.",
+        "url": "https://haveibeenpwned.com/API/v3",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "BreachHunter",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:36.560948"
+    },
+    {
+      "id": "username_4165e77ae6f7",
+      "type": "username",
+      "value": "httpst.megithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:37.079598"
+    },
+    {
+      "id": "username_41e7f084395b",
+      "type": "username",
+      "value": "httpstwitter.comgithub.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:21:38.164865"
+    },
+    {
+      "id": "domain_315b5cbd66",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "fa6c00cd5a19",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:24:21.629533"
+    },
+    {
+      "id": "domain_99cd2175108d",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.126821"
+    },
+    {
+      "id": "ip_6f9d4b074601",
+      "type": "ip",
+      "value": "140.82.116.3",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 24,
+        "lat": 37.7823,
+        "lon": -122.391,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.127485"
+    },
+    {
+      "id": "mx_record_afd191c082ab",
+      "type": "mx_record",
+      "value": "github-com.mail.protection.outlook.com",
+      "source": "dns_mx_record",
+      "confidence": 1.0,
+      "metadata": {
+        "priority": 0,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.128284"
+    },
+    {
+      "id": "ns_record_56c39f5c2608",
+      "type": "ns_record",
+      "value": "ns-421.awsdns-52.com",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.128879"
+    },
+    {
+      "id": "ns_record_7161800bb549",
+      "type": "ns_record",
+      "value": "ns-1283.awsdns-32.org",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.129456"
+    },
+    {
+      "id": "ns_record_a49db0a43fd5",
+      "type": "ns_record",
+      "value": "dns1.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.130014"
+    },
+    {
+      "id": "ns_record_ec6d03b7a6d5",
+      "type": "ns_record",
+      "value": "ns-1707.awsdns-21.co.uk",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.130589"
+    },
+    {
+      "id": "ns_record_deee852837df",
+      "type": "ns_record",
+      "value": "dns2.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.131192"
+    },
+    {
+      "id": "ns_record_5f931770b70d",
+      "type": "ns_record",
+      "value": "dns3.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.131773"
+    },
+    {
+      "id": "ns_record_37b09660301f",
+      "type": "ns_record",
+      "value": "ns-520.awsdns-01.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.132441"
+    },
+    {
+      "id": "ns_record_b71d974d3c22",
+      "type": "ns_record",
+      "value": "dns4.p08.nsone.net",
+      "source": "dns_ns_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.133140"
+    },
+    {
+      "id": "txt_record_2a7a9538bc7f",
+      "type": "txt_record",
+      "value": "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.133731"
+    },
+    {
+      "id": "txt_record_c144d7a499fc",
+      "type": "txt_record",
+      "value": "loom-site-verification=f3787154f1154b7880e720a511ea664d",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.134392"
+    },
+    {
+      "id": "txt_record_40e7b22b48a9",
+      "type": "txt_record",
+      "value": "TAILSCALE-xOzoDvFUzZr5YYVCQFuD",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.135040"
+    },
+    {
+      "id": "txt_record_0a73c3b64208",
+      "type": "txt_record",
+      "value": "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.135689"
+    },
+    {
+      "id": "txt_record_2d5455a1b98d",
+      "type": "txt_record",
+      "value": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.136391"
+    },
+    {
+      "id": "txt_record_614e46dfaf62",
+      "type": "txt_record",
+      "value": "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.137041"
+    },
+    {
+      "id": "txt_record_1b668ca04a81",
+      "type": "txt_record",
+      "value": "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.137723"
+    },
+    {
+      "id": "txt_record_5b3334e4d124",
+      "type": "txt_record",
+      "value": "apple-domain-verification=RyQhdzTl6Z6x8ZP4",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.138808"
+    },
+    {
+      "id": "txt_record_a7b9a80d10b0",
+      "type": "txt_record",
+      "value": "MS=ms44452932",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.139587"
+    },
+    {
+      "id": "txt_record_d88e8f5ee385",
+      "type": "txt_record",
+      "value": "00Dd0000000hHE0=1TBKg000000TN2r",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.140372"
+    },
+    {
+      "id": "txt_record_0c483e467991",
+      "type": "txt_record",
+      "value": "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.141084"
+    },
+    {
+      "id": "txt_record_bb6f791c5287",
+      "type": "txt_record",
+      "value": "MS=ms58704441",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.141827"
+    },
+    {
+      "id": "txt_record_b98f6c4754e5",
+      "type": "txt_record",
+      "value": "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.142606"
+    },
+    {
+      "id": "txt_record_1c5287505054",
+      "type": "txt_record",
+      "value": "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.143409"
+    },
+    {
+      "id": "txt_record_9e707e798834",
+      "type": "txt_record",
+      "value": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.144248"
+    },
+    {
+      "id": "txt_record_5265a11b81cc",
+      "type": "txt_record",
+      "value": "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.145488"
+    },
+    {
+      "id": "spf_record_f6a0c602a41b",
+      "type": "spf_record",
+      "value": "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "type": "spf",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.146495"
+    },
+    {
+      "id": "txt_record_8c080ff415a5",
+      "type": "txt_record",
+      "value": "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.147458"
+    },
+    {
+      "id": "txt_record_f6ad4cc6ecab",
+      "type": "txt_record",
+      "value": "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.148465"
+    },
+    {
+      "id": "txt_record_5fc7383c8358",
+      "type": "txt_record",
+      "value": "anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.149424"
+    },
+    {
+      "id": "txt_record_940f1a4cace7",
+      "type": "txt_record",
+      "value": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.150460"
+    },
+    {
+      "id": "dmarc_record_dbe274d87e25",
+      "type": "dmarc_record",
+      "value": "v=DMARC1; p=quarantine; sp=reject; pct=100; rua=mailto:dmarc@github.com; ruf=mailto:dmarc@github.com; fo=1",
+      "source": "dns_txt_record",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.151428"
+    },
+    {
+      "id": "subdomain_d82e179187d1",
+      "type": "subdomain",
+      "value": "api.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://api.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.152382"
+    },
+    {
+      "id": "subdomain_311e65e14703",
+      "type": "subdomain",
+      "value": "cdn-185-199-110-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-110-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.153303"
+    },
+    {
+      "id": "subdomain_222a86590d7a",
+      "type": "subdomain",
+      "value": "campus.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://campus.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.154261"
+    },
+    {
+      "id": "subdomain_80d7644549ee",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.155206"
+    },
+    {
+      "id": "subdomain_6fa944f35711",
+      "type": "subdomain",
+      "value": "f.cloud.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://f.cloud.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.156181"
+    },
+    {
+      "id": "subdomain_64fad229fcf3",
+      "type": "subdomain",
+      "value": "communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.157201"
+    },
+    {
+      "id": "subdomain_baaeacf8c2f4",
+      "type": "subdomain",
+      "value": "community.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://community.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.158199"
+    },
+    {
+      "id": "subdomain_5b7f48d197f1",
+      "type": "subdomain",
+      "value": "accessibility.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accessibility.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.159178"
+    },
+    {
+      "id": "subdomain_becf5a3b117d",
+      "type": "subdomain",
+      "value": "customer-stories-feed.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://customer-stories-feed.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.160200"
+    },
+    {
+      "id": "subdomain_31cd685a0c75",
+      "type": "subdomain",
+      "value": "cli.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cli.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.161245"
+    },
+    {
+      "id": "subdomain_0ccce8b6ff1c",
+      "type": "subdomain",
+      "value": "awesome-copilot.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://awesome-copilot.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.162272"
+    },
+    {
+      "id": "subdomain_e004839631d2",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.163308"
+    },
+    {
+      "id": "subdomain_636f7dfc3b04",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.164459"
+    },
+    {
+      "id": "subdomain_f0d57c0bd9b9",
+      "type": "subdomain",
+      "value": "boxen.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://boxen.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.165665"
+    },
+    {
+      "id": "subdomain_1a1dcab74fe8",
+      "type": "subdomain",
+      "value": "copilot-billing-preview.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot-billing-preview.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.166888"
+    },
+    {
+      "id": "subdomain_e05cab863e62",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.168005"
+    },
+    {
+      "id": "subdomain_3089dc7aa3db",
+      "type": "subdomain",
+      "value": "codeql.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://codeql.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.169210"
+    },
+    {
+      "id": "subdomain_99cd2175108d",
+      "type": "subdomain",
+      "value": "github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.170480"
+    },
+    {
+      "id": "subdomain_ba13028929d1",
+      "type": "subdomain",
+      "value": "accelerator.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accelerator.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.171596"
+    },
+    {
+      "id": "subdomain_8533fb824aad",
+      "type": "subdomain",
+      "value": "atom-installer.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://atom-installer.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.172856"
+    },
+    {
+      "id": "subdomain_56770c90ab8e",
+      "type": "subdomain",
+      "value": "archiveprogram.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://archiveprogram.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.174107"
+    },
+    {
+      "id": "subdomain_425857e0e535",
+      "type": "subdomain",
+      "value": "copilot.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.175328"
+    },
+    {
+      "id": "subdomain_d8275ab6ccc6",
+      "type": "subdomain",
+      "value": "t.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://t.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.176651"
+    },
+    {
+      "id": "subdomain_c2f2d04f93fd",
+      "type": "subdomain",
+      "value": "admin.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://admin.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.177950"
+    },
+    {
+      "id": "subdomain_b795cc406a58",
+      "type": "subdomain",
+      "value": "cxr.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cxr.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.179246"
+    },
+    {
+      "id": "subdomain_357470ab71b9",
+      "type": "subdomain",
+      "value": "blog-freeze.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://blog-freeze.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.180645"
+    },
+    {
+      "id": "subdomain_1add25368388",
+      "type": "subdomain",
+      "value": "alive.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://alive.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.181982"
+    },
+    {
+      "id": "subdomain_38b48fe53417",
+      "type": "subdomain",
+      "value": "copilot-reports.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://copilot-reports.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.183336"
+    },
+    {
+      "id": "subdomain_c58684578631",
+      "type": "subdomain",
+      "value": "m.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://m.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.184732"
+    },
+    {
+      "id": "subdomain_5e1a5b5d23b7",
+      "type": "subdomain",
+      "value": "cs.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cs.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.186095"
+    },
+    {
+      "id": "subdomain_c2ff40c34a02",
+      "type": "subdomain",
+      "value": "action.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://action.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.187442"
+    },
+    {
+      "id": "subdomain_46b89aa6b4ca",
+      "type": "subdomain",
+      "value": "blog.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://blog.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.188958"
+    },
+    {
+      "id": "subdomain_2a366dedf899",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.190365"
+    },
+    {
+      "id": "subdomain_e8ff04951022",
+      "type": "subdomain",
+      "value": "brand.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://brand.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.191752"
+    },
+    {
+      "id": "subdomain_0089c7518b1b",
+      "type": "subdomain",
+      "value": "res.communication.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://res.communication.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.193218"
+    },
+    {
+      "id": "subdomain_6a4632c94ec1",
+      "type": "subdomain",
+      "value": "bug-bash.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://bug-bash.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.194652"
+    },
+    {
+      "id": "subdomain_7140200cac42",
+      "type": "subdomain",
+      "value": "cdn-185-199-111-133.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-111-133.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.196125"
+    },
+    {
+      "id": "subdomain_39e8d12b2eaf",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.197634"
+    },
+    {
+      "id": "subdomain_a2883d9faa21",
+      "type": "subdomain",
+      "value": "codeload.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://codeload.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.199107"
+    },
+    {
+      "id": "subdomain_c638e482fa25",
+      "type": "subdomain",
+      "value": "cdn-185-199-109-153.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-109-153.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.200623"
+    },
+    {
+      "id": "subdomain_1610890ca1c2",
+      "type": "subdomain",
+      "value": "asset-generator.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://asset-generator.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.202127"
+    },
+    {
+      "id": "subdomain_e91116637bff",
+      "type": "subdomain",
+      "value": "collector-cdn.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://collector-cdn.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.203622"
+    },
+    {
+      "id": "subdomain_d0a6de719fb0",
+      "type": "subdomain",
+      "value": "bounty.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://bounty.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.205415"
+    },
+    {
+      "id": "subdomain_f61a8ea6ce78",
+      "type": "subdomain",
+      "value": "classroom.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://classroom.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.207281"
+    },
+    {
+      "id": "subdomain_9b3aab4007bc",
+      "type": "subdomain",
+      "value": "collector.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://collector.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.209416"
+    },
+    {
+      "id": "subdomain_cbf2708bcfce",
+      "type": "subdomain",
+      "value": "central.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://central.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.210971"
+    },
+    {
+      "id": "subdomain_a67d2c8cab07",
+      "type": "subdomain",
+      "value": "data-science.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://data-science.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.212538"
+    },
+    {
+      "id": "subdomain_bdb878d23225",
+      "type": "subdomain",
+      "value": "cdn-185-199-108-154.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://cdn-185-199-108-154.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.214136"
+    },
+    {
+      "id": "subdomain_d18ffaab6353",
+      "type": "subdomain",
+      "value": "accessibility-playbook.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://accessibility-playbook.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.215600"
+    },
+    {
+      "id": "subdomain_a8d60072619b",
+      "type": "subdomain",
+      "value": "alive-staging.github.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://alive-staging.github.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.217233"
+    },
+    {
+      "id": "domain_4c1d852e5cf4",
+      "type": "domain",
+      "value": "lb-140-82-116-3-sea.github.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.218823"
+    },
+    {
+      "id": "domain_b1804859772e",
+      "type": "domain",
+      "value": "coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.220465"
+    },
+    {
+      "id": "domain_3d91c7d141b5",
+      "type": "domain",
+      "value": "autodiscover.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.222265"
+    },
+    {
+      "id": "domain_dfb6e32999c0",
+      "type": "domain",
+      "value": "cpanel.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.223867"
+    },
+    {
+      "id": "domain_794ad532eae4",
+      "type": "domain",
+      "value": "cpcalendars.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.225579"
+    },
+    {
+      "id": "domain_5acd06222ac2",
+      "type": "domain",
+      "value": "cpcontacts.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.227227"
+    },
+    {
+      "id": "domain_5d7c2eaecbea",
+      "type": "domain",
+      "value": "mail.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.229768"
+    },
+    {
+      "id": "domain_aca1ebcb99e0",
+      "type": "domain",
+      "value": "bakkta.support.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.232564"
+    },
+    {
+      "id": "domain_c1b0a90d1351",
+      "type": "domain",
+      "value": "webdisk.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.234355"
+    },
+    {
+      "id": "domain_9eedc4e6e7f7",
+      "type": "domain",
+      "value": "webmail.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.236216"
+    },
+    {
+      "id": "domain_4aa32bc728e1",
+      "type": "domain",
+      "value": "bakkta.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.237885"
+    },
+    {
+      "id": "domain_08bb6b100a56",
+      "type": "domain",
+      "value": "bakktat.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.239623"
+    },
+    {
+      "id": "domain_60ba1e0176d9",
+      "type": "domain",
+      "value": "bakktatr.website.coindream.site",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:24:23.241413"
+    },
+    {
+      "id": "country_f253efe302d3",
+      "type": "country",
+      "value": "United States",
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "metadata": {
+        "code": "US",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "geo_source": "country_capital",
+        "geo_confidence": 0.75,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.657576"
+    },
+    {
+      "id": "city_f4334fdfa1c7",
+      "type": "city",
+      "value": "San Francisco",
+      "source": "ip-api.com",
+      "confidence": 0.9,
+      "metadata": {
+        "region": "California",
+        "postal": "94107",
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "geo_source": "city_table",
+        "geo_confidence": 0.92,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.661510"
+    },
+    {
+      "id": "isp_915ee22d9e3c",
+      "type": "isp",
+      "value": "GitHub, Inc.",
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "metadata": {
+        "via": "ip-api.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.665471"
+    },
+    {
+      "id": "company_915ee22d9e3c",
+      "type": "company",
+      "value": "GitHub, Inc.",
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "metadata": {
+        "via": "ip-api.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.669076"
+    },
+    {
+      "id": "asn_128d6ccf1b6f",
+      "type": "asn",
+      "value": "AS36459 GitHub, Inc.",
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "metadata": {
+        "via": "ip-api.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.671322"
+    },
+    {
+      "id": "timezone_7a86dc880dd3",
+      "type": "timezone",
+      "value": "America/Los_Angeles",
+      "source": "ip-api.com",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "ip-api.com",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.673633"
+    },
+    {
+      "id": "gps_c2100b83b14f",
+      "type": "gps",
+      "value": "37.782300,-122.391000",
+      "source": "ip-api.com",
+      "confidence": 0.9,
+      "metadata": {
+        "lat": 37.7823,
+        "lon": -122.391,
+        "source": "ip-api.com",
+        "geo_source": "gps_parsed",
+        "geo_confidence": 1.0,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.675846"
+    },
+    {
+      "id": "rdap_handle_148a52e0fba8",
+      "type": "rdap_handle",
+      "value": "NET-140-82-112-0-1",
+      "source": "rdap_org",
+      "confidence": 0.95,
+      "metadata": {
+        "source": "rdap.org",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.678144"
+    },
+    {
+      "id": "rdap_name_39f992ba176f",
+      "type": "rdap_name",
+      "value": "GITHU",
+      "source": "rdap_org",
+      "confidence": 0.95,
+      "metadata": {
+        "source": "rdap.org",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.680480"
+    },
+    {
+      "id": "rdap_start_address_210beebe3cbe",
+      "type": "rdap_start_address",
+      "value": "140.82.112.0",
+      "source": "rdap_org",
+      "confidence": 0.95,
+      "metadata": {
+        "source": "rdap.org",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.682905"
+    },
+    {
+      "id": "rdap_end_address_93da00d0a404",
+      "type": "rdap_end_address",
+      "value": "140.82.127.255",
+      "source": "rdap_org",
+      "confidence": 0.95,
+      "metadata": {
+        "source": "rdap.org",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "IPTracker",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:26.685318"
+    },
+    {
+      "id": "domain_afd191c082ab",
+      "type": "domain",
+      "value": "github-com.mail.protection.outlook.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://github-com.mail.protection.outlook.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.665530"
+    },
+    {
+      "id": "ip_b5cec5b6828d",
+      "type": "ip",
+      "value": "52.101.9.5",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 36.677696,
+        "lon": -78.37471,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.674424"
+    },
+    {
+      "id": "ip_b187cc6ec65f",
+      "type": "ip",
+      "value": "52.101.41.28",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 37.783,
+        "lon": -122.417,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.678327"
+    },
+    {
+      "id": "ip_587af3afe91f",
+      "type": "ip",
+      "value": "52.101.10.18",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 36.677696,
+        "lon": -78.37471,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.681119"
+    },
+    {
+      "id": "ip_54e32fca6f4a",
+      "type": "ip",
+      "value": "52.101.11.10",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 29.4167,
+        "lon": -98.5,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.683850"
+    },
+    {
+      "id": "subdomain_afd191c082ab",
+      "type": "subdomain",
+      "value": "github-com.mail.protection.outlook.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://github-com.mail.protection.outlook.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.686720"
+    },
+    {
+      "id": "domain_123d3b1f5714",
+      "type": "domain",
+      "value": "qantik.co",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.689563"
+    },
+    {
+      "id": "domain_55aa71656042",
+      "type": "domain",
+      "value": "1817932023.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.692264"
+    },
+    {
+      "id": "domain_873685e3d426",
+      "type": "domain",
+      "value": "1907019119.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.695047"
+    },
+    {
+      "id": "domain_da8e6be3ded2",
+      "type": "domain",
+      "value": "211279420.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.698018"
+    },
+    {
+      "id": "domain_8ad74dedd06f",
+      "type": "domain",
+      "value": "mta-sts.391460683.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.700800"
+    },
+    {
+      "id": "domain_d68b50764e8b",
+      "type": "domain",
+      "value": "474144862.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.703564"
+    },
+    {
+      "id": "domain_6ddad4752612",
+      "type": "domain",
+      "value": "534296080.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.706358"
+    },
+    {
+      "id": "domain_267a13117e26",
+      "type": "domain",
+      "value": "565037368.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.709168"
+    },
+    {
+      "id": "domain_ae7af4f61fc0",
+      "type": "domain",
+      "value": "831102601.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.711915"
+    },
+    {
+      "id": "domain_f9ced6fbd114",
+      "type": "domain",
+      "value": "mta-sts.964081180.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.714725"
+    },
+    {
+      "id": "domain_984ed9ca1513",
+      "type": "domain",
+      "value": "mta-sts.99016020.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.717679"
+    },
+    {
+      "id": "domain_4ae84fc8267c",
+      "type": "domain",
+      "value": "webdisk.mail.exchangelabs.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.720499"
+    },
+    {
+      "id": "domain_c36fbc9701e9",
+      "type": "domain",
+      "value": "mta-sts.0913-loan.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.723305"
+    },
+    {
+      "id": "domain_058ff599cbb2",
+      "type": "domain",
+      "value": "mta-sts.1083-com.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.726193"
+    },
+    {
+      "id": "domain_227fce0cc833",
+      "type": "domain",
+      "value": "mta-sts.1278-men.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.729038"
+    },
+    {
+      "id": "domain_2f50f38a2124",
+      "type": "domain",
+      "value": "mta-sts.1430northlakeshoredrive-com.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.731843"
+    },
+    {
+      "id": "domain_d7d5393ac4bd",
+      "type": "domain",
+      "value": "mta-sts.17gre32-space.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.734770"
+    },
+    {
+      "id": "domain_cd60c1df8063",
+      "type": "domain",
+      "value": "1810kennedy-com.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.737657"
+    },
+    {
+      "id": "domain_41576ff1c6dd",
+      "type": "domain",
+      "value": "1accordtech-com.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.740735"
+    },
+    {
+      "id": "domain_d0709b44c549",
+      "type": "domain",
+      "value": "mta-sts.1k1v-com.mail.eo.outlook.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:31.743690"
+    },
+    {
+      "id": "domain_56c39f5c2608",
+      "type": "domain",
+      "value": "ns-421.awsdns-52.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://ns-421.awsdns-52.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.482578"
+    },
+    {
+      "id": "ip_8d2504ffdc4f",
+      "type": "ip",
+      "value": "205.251.193.165",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 21239,
+        "lat": 39.0438,
+        "lon": -77.4874,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.486278"
+    },
+    {
+      "id": "subdomain_56c39f5c2608",
+      "type": "subdomain",
+      "value": "ns-421.awsdns-52.com",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://ns-421.awsdns-52.com",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.489833"
+    },
+    {
+      "id": "domain_4a27097cefd9",
+      "type": "domain",
+      "value": "ns4.natursteine.co.at",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.493093"
+    },
+    {
+      "id": "domain_a56d948e23ec",
+      "type": "domain",
+      "value": "dns4.4ft.co",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.496228"
+    },
+    {
+      "id": "domain_7d8ecb4fd990",
+      "type": "domain",
+      "value": "ns3.rfn.co",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.499452"
+    },
+    {
+      "id": "domain_268055a9ec24",
+      "type": "domain",
+      "value": "ns1.cuppett.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.502615"
+    },
+    {
+      "id": "domain_4cf1761f9798",
+      "type": "domain",
+      "value": "ns4.deadmanswitch.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.505806"
+    },
+    {
+      "id": "domain_d1abf0f3b00f",
+      "type": "domain",
+      "value": "ns4.rnuno.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.508923"
+    },
+    {
+      "id": "domain_b570bab1eea2",
+      "type": "domain",
+      "value": "ns4.id-t.sse-ns.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.512010"
+    },
+    {
+      "id": "domain_04cb703bc126",
+      "type": "domain",
+      "value": "ns2.leagueworks.net",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:33.515194"
+    },
+    {
+      "id": "domain_7161800bb549",
+      "type": "domain",
+      "value": "ns-1283.awsdns-32.org",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://ns-1283.awsdns-32.org",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.249768"
+    },
+    {
+      "id": "ip_17027b262cda",
+      "type": "ip",
+      "value": "205.251.197.3",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 13536,
+        "lat": 38.9549,
+        "lon": -77.4045,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.253723"
+    },
+    {
+      "id": "subdomain_7161800bb549",
+      "type": "subdomain",
+      "value": "ns-1283.awsdns-32.org",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://ns-1283.awsdns-32.org",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.257500"
+    },
+    {
+      "id": "domain_0a0e4ae7bb6f",
+      "type": "domain",
+      "value": "ns3.uhubdns.biz",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.260944"
+    },
+    {
+      "id": "domain_86502201e152",
+      "type": "domain",
+      "value": "ns3.abovemodern1.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.264623"
+    },
+    {
+      "id": "domain_e7ea6a9650d8",
+      "type": "domain",
+      "value": "ns3.araxis.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.268046"
+    },
+    {
+      "id": "domain_1b803bd6052d",
+      "type": "domain",
+      "value": "zed.ns.dnscod.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.271590"
+    },
+    {
+      "id": "domain_4adafaac332e",
+      "type": "domain",
+      "value": "ns3-a8.warnerbros.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.275082"
+    },
+    {
+      "id": "domain_6b20e082e702",
+      "type": "domain",
+      "value": "g-ns-1283.awsdns-63.org",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.278594"
+    },
+    {
+      "id": "domain_c9d2655f7c52",
+      "type": "domain",
+      "value": "ns3.eclipseretailsolutions.co.uk",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:35.282133"
+    },
+    {
+      "id": "domain_a49db0a43fd5",
+      "type": "domain",
+      "value": "dns1.p08.nsone.net",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://dns1.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.924215"
+    },
+    {
+      "id": "ip_8f358f66df86",
+      "type": "ip",
+      "value": "198.51.44.8",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 6137,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.932468"
+    },
+    {
+      "id": "subdomain_a49db0a43fd5",
+      "type": "subdomain",
+      "value": "dns1.p08.nsone.net",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://dns1.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.941713"
+    },
+    {
+      "id": "domain_67c9b0da9d09",
+      "type": "domain",
+      "value": "ns2.firstpr.com.au",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.945755"
+    },
+    {
+      "id": "domain_a00747d285be",
+      "type": "domain",
+      "value": "esimplesauditor.com.br",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.949797"
+    },
+    {
+      "id": "domain_b0b2429cd5b0",
+      "type": "domain",
+      "value": "www.igreeneconomiabr.com.br",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.953499"
+    },
+    {
+      "id": "domain_6da6c9ea13ae",
+      "type": "domain",
+      "value": "www.workflowgestao.com.br",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.957212"
+    },
+    {
+      "id": "domain_8972d48c2534",
+      "type": "domain",
+      "value": "ecuatorianos.ca",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.960844"
+    },
+    {
+      "id": "domain_a5c3262ee934",
+      "type": "domain",
+      "value": "bostontechsystems.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.964437"
+    },
+    {
+      "id": "domain_95aad1d9a8b7",
+      "type": "domain",
+      "value": "ns8.demysdns.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.968114"
+    },
+    {
+      "id": "domain_c532ae61e9dc",
+      "type": "domain",
+      "value": "www.erickaduru.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.971698"
+    },
+    {
+      "id": "domain_2892a1aac06e",
+      "type": "domain",
+      "value": "www.gp3030.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.975371"
+    },
+    {
+      "id": "domain_a89bf32fb701",
+      "type": "domain",
+      "value": "www.louperetailadvisory.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.979114"
+    },
+    {
+      "id": "domain_e680180fc50d",
+      "type": "domain",
+      "value": "www.perfect-presence.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.982878"
+    },
+    {
+      "id": "domain_ff0d5359ab7d",
+      "type": "domain",
+      "value": "es.redhotchilipaintersllc.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.986582"
+    },
+    {
+      "id": "domain_9370f8f6316c",
+      "type": "domain",
+      "value": "www.routertoken.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.990451"
+    },
+    {
+      "id": "domain_65d94d6cfd17",
+      "type": "domain",
+      "value": "en.spacecoastboatmanagement.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.994251"
+    },
+    {
+      "id": "domain_10f7ffcf06b8",
+      "type": "domain",
+      "value": "shenzhen.yueyimei.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:36.998111"
+    },
+    {
+      "id": "domain_ac3c92a82b11",
+      "type": "domain",
+      "value": "greenpowersprouts.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:37.001927"
+    },
+    {
+      "id": "domain_e11d941a8c06",
+      "type": "domain",
+      "value": "www.nextcloud.greenpowersprouts.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:37.006034"
+    },
+    {
+      "id": "domain_fe25e1483e7e",
+      "type": "domain",
+      "value": "www.greenpowersprouts.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:37.009836"
+    },
+    {
+      "id": "domain_a058ed107a4f",
+      "type": "domain",
+      "value": "ns1.mailmeow.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:37.013628"
+    },
+    {
+      "id": "domain_60368b6927c9",
+      "type": "domain",
+      "value": "xn--frderverein-kita-wewer-uhc.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:37.017546"
+    },
+    {
+      "id": "domain_ec6d03b7a6d5",
+      "type": "domain",
+      "value": "ns-1707.awsdns-21.co.uk",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://ns-1707.awsdns-21.co.uk",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.704861"
+    },
+    {
+      "id": "ip_27b912a27e08",
+      "type": "ip",
+      "value": "205.251.198.171",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 21191,
+        "lat": 39.0438,
+        "lon": -77.4874,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.709341"
+    },
+    {
+      "id": "subdomain_ec6d03b7a6d5",
+      "type": "subdomain",
+      "value": "ns-1707.awsdns-21.co.uk",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://ns-1707.awsdns-21.co.uk",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.713773"
+    },
+    {
+      "id": "domain_df4b1d16b1fa",
+      "type": "domain",
+      "value": "pns02.digibean.com.au",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.717944"
+    },
+    {
+      "id": "domain_be6205fd4ec5",
+      "type": "domain",
+      "value": "ns3.hosted.by.actionverb.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.721958"
+    },
+    {
+      "id": "domain_281b64390906",
+      "type": "domain",
+      "value": "ns3.actionverb.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.725931"
+    },
+    {
+      "id": "domain_6e1f1919b480",
+      "type": "domain",
+      "value": "ns3.synapsewireless.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.729951"
+    },
+    {
+      "id": "domain_3e95bb814bc9",
+      "type": "domain",
+      "value": "ns2.warnerbros.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.733924"
+    },
+    {
+      "id": "domain_141c5a6400b0",
+      "type": "domain",
+      "value": "ns-4.dtcc.datawebstore.net",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:38.739638"
+    },
+    {
+      "id": "domain_deee852837df",
+      "type": "domain",
+      "value": "dns2.p08.nsone.net",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://dns2.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.364510"
+    },
+    {
+      "id": "ip_5c459d39fba8",
+      "type": "ip",
+      "value": "198.51.45.8",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 21337,
+        "lat": 43.6445,
+        "lon": -79.3843,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.369158"
+    },
+    {
+      "id": "subdomain_deee852837df",
+      "type": "subdomain",
+      "value": "dns2.p08.nsone.net",
+      "source": "hackertarget",
+      "confidence": 0.9,
+      "metadata": {
+        "via": "hackertarget_hostsearch",
+        "source_url": "https://dns2.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.373672"
+    },
+    {
+      "id": "domain_2a135a73385f",
+      "type": "domain",
+      "value": "www.spacecoastboatmanagement.com",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.377986"
+    },
+    {
+      "id": "domain_58deb4d78a58",
+      "type": "domain",
+      "value": "ns2.mailmeow.de",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.382163"
+    },
+    {
+      "id": "domain_6859efbf8203",
+      "type": "domain",
+      "value": "dns2.p08.d.section.io",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.386395"
+    },
+    {
+      "id": "domain_d016cae3b9ba",
+      "type": "domain",
+      "value": "dns2.piapp.com.tw",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:40.390588"
+    },
+    {
+      "id": "domain_5f931770b70d",
+      "type": "domain",
+      "value": "dns3.p08.nsone.net",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://dns3.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:46.994688"
+    },
+    {
+      "id": "ip_162e2bac9d7f",
+      "type": "ip",
+      "value": "198.51.44.72",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 20085,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:46.999819"
+    },
+    {
+      "id": "domain_f96ca83d3e62",
+      "type": "domain",
+      "value": "API count exceeded - Increase Quota with Membership",
+      "source": "hackertarget_reverse",
+      "confidence": 0.7,
+      "metadata": {
+        "via": "shared_ip",
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:47.004750"
+    },
+    {
+      "id": "domain_37b09660301f",
+      "type": "domain",
+      "value": "ns-520.awsdns-01.net",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://ns-520.awsdns-01.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:59.077261"
+    },
+    {
+      "id": "ip_77f52b595b4b",
+      "type": "ip",
+      "value": "205.251.194.8",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 9676,
+        "lat": 37.3387,
+        "lon": -121.885,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:24:59.082346"
+    },
+    {
+      "id": "domain_b71d974d3c22",
+      "type": "domain",
+      "value": "dns4.p08.nsone.net",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "https://dns4.p08.nsone.net",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:20.066999"
+    },
+    {
+      "id": "ip_48186af3c3e2",
+      "type": "ip",
+      "value": "198.51.45.72",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 6725,
+        "lat": 43.6445,
+        "lon": -79.3843,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:20.072114"
+    },
+    {
+      "id": "social_profile_3e42ca71f5b1",
+      "type": "social_profile",
+      "value": "https://twitter.com/id",
+      "source": "cross_ref/twitter",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "twitter",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://twitter.com/id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.276795"
+    },
+    {
+      "id": "social_profile_e1080827e149",
+      "type": "social_profile",
+      "value": "https://github.com/id",
+      "source": "cross_ref/github",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "github",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://github.com/id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.281910"
+    },
+    {
+      "id": "social_profile_22f19f9aac0b",
+      "type": "social_profile",
+      "value": "https://www.tiktok.com/@id",
+      "source": "cross_ref/tiktok",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "tiktok",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://www.tiktok.com/@id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.286463"
+    },
+    {
+      "id": "social_profile_f96f8720d817",
+      "type": "social_profile",
+      "value": "https://www.youtube.com/@id",
+      "source": "cross_ref/youtube",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "youtube",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://www.youtube.com/@id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.290853"
+    },
+    {
+      "id": "social_profile_7f6f3f7a2f7b",
+      "type": "social_profile",
+      "value": "https://gitlab.com/id",
+      "source": "cross_ref/gitlab",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "gitlab",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://gitlab.com/id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.295222"
+    },
+    {
+      "id": "social_profile_b81786ef3c42",
+      "type": "social_profile",
+      "value": "https://t.me/id",
+      "source": "cross_ref/telegram",
+      "confidence": 0.7,
+      "metadata": {
+        "platform": "telegram",
+        "handle": "id",
+        "via": "same handle as steam",
+        "source_url": "https://t.me/id",
+        "status": "verified",
+        "discovered_by": "SocialGraph",
+        "session": "fa6c00cd5a19",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:25:31.299725"
+    },
+    {
+      "id": "domain_4973b6f000",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "9d47d600634a",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:28:31.626341"
+    },
+    {
+      "id": "domain_3b81624219",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "a8fa0ff90d68",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:28:35.647462"
+    },
+    {
+      "id": "domain_35c4bc5612",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "200a8e4ea91c",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:28:40.376750"
+    },
+    {
+      "id": "ip_50548b147a50",
+      "type": "ip",
+      "value": "52.101.40.2",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 41.13925,
+        "lon": -104.816154,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "9d47d600634a",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:28:47.333824"
+    },
+    {
+      "id": "ip_50bf37948f4a",
+      "type": "ip",
+      "value": "52.101.10.2",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 36.677696,
+        "lon": -78.37471,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "9d47d600634a",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:28:47.339837"
+    },
+    {
+      "id": "ip_7de741d8ba2e",
+      "type": "ip",
+      "value": "52.101.41.58",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 37.783,
+        "lon": -122.417,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "9d47d600634a",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:28:47.345495"
+    },
+    {
+      "id": "ip_8c42d629ba23",
+      "type": "ip",
+      "value": "40.93.192.1",
+      "source": "dns_a_record",
+      "confidence": 1.0,
+      "metadata": {
+        "via": "DNS A record",
+        "ttl": 10,
+        "lat": 41.5908,
+        "lon": -93.6208,
+        "geo_source": "ip-api.com",
+        "geo_confidence": 0.95,
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "DomainMapper",
+        "session": "9d47d600634a",
+        "depth": 2
+      },
+      "created_at": "2026-06-29T01:28:47.350904"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ip_6f9d4b074601",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 140.82.116.3"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ip_6f9d4b074601",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 140.82.116.3"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ip_6f9d4b074601",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 140.82.116.3"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ip_6f9d4b074601",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 140.82.116.3"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "mx_record_afd191c082ab",
+      "type": "mail_handled_by",
+      "weight": 1.0,
+      "evidence": "MX record (prio 0) → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "mx_record_afd191c082ab",
+      "type": "mail_handled_by",
+      "weight": 1.0,
+      "evidence": "MX record (prio 0) → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "mx_record_afd191c082ab",
+      "type": "mail_handled_by",
+      "weight": 1.0,
+      "evidence": "MX record (prio 0) → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "mx_record_afd191c082ab",
+      "type": "mail_handled_by",
+      "weight": 1.0,
+      "evidence": "MX record (prio 0) → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_56c39f5c2608",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_56c39f5c2608",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_56c39f5c2608",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_56c39f5c2608",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_7161800bb549",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_7161800bb549",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_7161800bb549",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_7161800bb549",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_a49db0a43fd5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_a49db0a43fd5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_a49db0a43fd5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_a49db0a43fd5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_ec6d03b7a6d5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_ec6d03b7a6d5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_ec6d03b7a6d5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_ec6d03b7a6d5",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_deee852837df",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_deee852837df",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_deee852837df",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_deee852837df",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_5f931770b70d",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns3.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_5f931770b70d",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns3.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_5f931770b70d",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns3.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_5f931770b70d",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns3.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_37b09660301f",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-520.awsdns-01.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_37b09660301f",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-520.awsdns-01.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_37b09660301f",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-520.awsdns-01.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_37b09660301f",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → ns-520.awsdns-01.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_b71d974d3c22",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns4.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_b71d974d3c22",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns4.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_b71d974d3c22",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns4.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "ns_record_b71d974d3c22",
+      "type": "nameserver",
+      "weight": 1.0,
+      "evidence": "NS record → dns4.p08.nsone.net"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "spf_record_f6a0c602a41b",
+      "type": "spf_policy",
+      "weight": 1.0,
+      "evidence": "SPF record"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "spf_record_f6a0c602a41b",
+      "type": "spf_policy",
+      "weight": 1.0,
+      "evidence": "SPF record"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "spf_record_f6a0c602a41b",
+      "type": "spf_policy",
+      "weight": 1.0,
+      "evidence": "SPF record"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "spf_record_f6a0c602a41b",
+      "type": "spf_policy",
+      "weight": 1.0,
+      "evidence": "SPF record"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d82e179187d1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → api.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_311e65e14703",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-110-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_222a86590d7a",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → campus.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_80d7644549ee",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_6fa944f35711",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → f.cloud.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_64fad229fcf3",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_baaeacf8c2f4",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → community.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_5b7f48d197f1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accessibility.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_becf5a3b117d",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → customer-stories-feed.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_31cd685a0c75",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cli.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_0ccce8b6ff1c",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → awesome-copilot.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e004839631d2",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_636f7dfc3b04",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_f0d57c0bd9b9",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → boxen.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1a1dcab74fe8",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot-billing-preview.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e05cab863e62",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_3089dc7aa3db",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → codeql.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_99cd2175108d",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_ba13028929d1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accelerator.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_8533fb824aad",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → atom-installer.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_56770c90ab8e",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → archiveprogram.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_425857e0e535",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d8275ab6ccc6",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → t.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c2f2d04f93fd",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → admin.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_b795cc406a58",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cxr.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_357470ab71b9",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → blog-freeze.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1add25368388",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → alive.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_38b48fe53417",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → copilot-reports.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c58684578631",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → m.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_5e1a5b5d23b7",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cs.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c2ff40c34a02",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → action.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_46b89aa6b4ca",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → blog.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_2a366dedf899",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e8ff04951022",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → brand.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_0089c7518b1b",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → res.communication.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_6a4632c94ec1",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → bug-bash.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_7140200cac42",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-111-133.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_39e8d12b2eaf",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a2883d9faa21",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → codeload.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_c638e482fa25",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-109-153.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_1610890ca1c2",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → asset-generator.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_e91116637bff",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → collector-cdn.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d0a6de719fb0",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → bounty.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_f61a8ea6ce78",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → classroom.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_9b3aab4007bc",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → collector.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_cbf2708bcfce",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → central.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a67d2c8cab07",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → data-science.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_bdb878d23225",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → cdn-185-199-108-154.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_d18ffaab6353",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → accessibility-playbook.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "subdomain_a8d60072619b",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → alive-staging.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_4c1d852e5cf4",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_b1804859772e",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_3d91c7d141b5",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → autodiscover.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_dfb6e32999c0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpanel.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_794ad532eae4",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpcalendars.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_5acd06222ac2",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → cpcontacts.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_5d7c2eaecbea",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mail.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_aca1ebcb99e0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakkta.support.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_c1b0a90d1351",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → webdisk.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_9eedc4e6e7f7",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → webmail.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_4aa32bc728e1",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakkta.website.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_08bb6b100a56",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakktat.website.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_60ba1e0176d9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bakktatr.website.coindream.site"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_99cd2175108d",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "country_f253efe302d3",
+      "type": "located_in",
+      "weight": 0.95,
+      "evidence": "ip-api.com country → United States"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "country_f253efe302d3",
+      "type": "located_in",
+      "weight": 0.95,
+      "evidence": "ip-api.com country → United States"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "country_f253efe302d3",
+      "type": "located_in",
+      "weight": 0.95,
+      "evidence": "ip-api.com country → United States"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "country_f253efe302d3",
+      "type": "located_in",
+      "weight": 0.95,
+      "evidence": "ip-api.com country → United States"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "city_f4334fdfa1c7",
+      "type": "located_in",
+      "weight": 0.9,
+      "evidence": "ip-api.com city → San Francisco"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "city_f4334fdfa1c7",
+      "type": "located_in",
+      "weight": 0.9,
+      "evidence": "ip-api.com city → San Francisco"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "city_f4334fdfa1c7",
+      "type": "located_in",
+      "weight": 0.9,
+      "evidence": "ip-api.com city → San Francisco"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "city_f4334fdfa1c7",
+      "type": "located_in",
+      "weight": 0.9,
+      "evidence": "ip-api.com city → San Francisco"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "isp_915ee22d9e3c",
+      "type": "served_by_isp",
+      "weight": 0.95,
+      "evidence": "ip-api.com isp → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "isp_915ee22d9e3c",
+      "type": "served_by_isp",
+      "weight": 0.95,
+      "evidence": "ip-api.com isp → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "isp_915ee22d9e3c",
+      "type": "served_by_isp",
+      "weight": 0.95,
+      "evidence": "ip-api.com isp → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "isp_915ee22d9e3c",
+      "type": "served_by_isp",
+      "weight": 0.95,
+      "evidence": "ip-api.com isp → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "company_915ee22d9e3c",
+      "type": "served_by_company",
+      "weight": 0.95,
+      "evidence": "ip-api.com org → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "company_915ee22d9e3c",
+      "type": "served_by_company",
+      "weight": 0.95,
+      "evidence": "ip-api.com org → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "company_915ee22d9e3c",
+      "type": "served_by_company",
+      "weight": 0.95,
+      "evidence": "ip-api.com org → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "company_915ee22d9e3c",
+      "type": "served_by_company",
+      "weight": 0.95,
+      "evidence": "ip-api.com org → GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "asn_128d6ccf1b6f",
+      "type": "served_by_asn",
+      "weight": 0.95,
+      "evidence": "ip-api.com as → AS36459 GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "asn_128d6ccf1b6f",
+      "type": "served_by_asn",
+      "weight": 0.95,
+      "evidence": "ip-api.com as → AS36459 GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "asn_128d6ccf1b6f",
+      "type": "served_by_asn",
+      "weight": 0.95,
+      "evidence": "ip-api.com as → AS36459 GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "asn_128d6ccf1b6f",
+      "type": "served_by_asn",
+      "weight": 0.95,
+      "evidence": "ip-api.com as → AS36459 GitHub, Inc."
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "timezone_7a86dc880dd3",
+      "type": "in_timezone",
+      "weight": 0.9,
+      "evidence": "ip-api.com tz → America/Los_Angeles"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "timezone_7a86dc880dd3",
+      "type": "in_timezone",
+      "weight": 0.9,
+      "evidence": "ip-api.com tz → America/Los_Angeles"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "timezone_7a86dc880dd3",
+      "type": "in_timezone",
+      "weight": 0.9,
+      "evidence": "ip-api.com tz → America/Los_Angeles"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "timezone_7a86dc880dd3",
+      "type": "in_timezone",
+      "weight": 0.9,
+      "evidence": "ip-api.com tz → America/Los_Angeles"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "gps_c2100b83b14f",
+      "type": "geolocated_at",
+      "weight": 0.9,
+      "evidence": "ip-api.com coords → 37.782300,-122.391000"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "gps_c2100b83b14f",
+      "type": "geolocated_at",
+      "weight": 0.9,
+      "evidence": "ip-api.com coords → 37.782300,-122.391000"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "gps_c2100b83b14f",
+      "type": "geolocated_at",
+      "weight": 0.9,
+      "evidence": "ip-api.com coords → 37.782300,-122.391000"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "gps_c2100b83b14f",
+      "type": "geolocated_at",
+      "weight": 0.9,
+      "evidence": "ip-api.com coords → 37.782300,-122.391000"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4c1d852e5cf4",
+      "type": "reverse_dns",
+      "weight": 0.95,
+      "evidence": "PTR record → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4c1d852e5cf4",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4c1d852e5cf4",
+      "type": "reverse_dns",
+      "weight": 0.95,
+      "evidence": "PTR record → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4c1d852e5cf4",
+      "type": "reverse_dns",
+      "weight": 0.95,
+      "evidence": "PTR record → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4c1d852e5cf4",
+      "type": "reverse_dns",
+      "weight": 0.95,
+      "evidence": "PTR record → lb-140-82-116-3-sea.github.com"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_handle_148a52e0fba8",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP handle → NET-140-82-112-0-1"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_handle_148a52e0fba8",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP handle → NET-140-82-112-0-1"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_handle_148a52e0fba8",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP handle → NET-140-82-112-0-1"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_handle_148a52e0fba8",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP handle → NET-140-82-112-0-1"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_name_39f992ba176f",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP name → GITHU"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_name_39f992ba176f",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP name → GITHU"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_name_39f992ba176f",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP name → GITHU"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_name_39f992ba176f",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP name → GITHU"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_start_address_210beebe3cbe",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP start_address → 140.82.112.0"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_start_address_210beebe3cbe",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP start_address → 140.82.112.0"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_start_address_210beebe3cbe",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP start_address → 140.82.112.0"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_start_address_210beebe3cbe",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP start_address → 140.82.112.0"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_end_address_93da00d0a404",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP end_address → 140.82.127.255"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_end_address_93da00d0a404",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP end_address → 140.82.127.255"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_end_address_93da00d0a404",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP end_address → 140.82.127.255"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "rdap_end_address_93da00d0a404",
+      "type": "rdap_info",
+      "weight": 0.9,
+      "evidence": "RDAP end_address → 140.82.127.255"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_b1804859772e",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_3d91c7d141b5",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → autodiscover.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_dfb6e32999c0",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → cpanel.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_794ad532eae4",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → cpcalendars.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_5acd06222ac2",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → cpcontacts.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_5d7c2eaecbea",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → mail.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_aca1ebcb99e0",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → bakkta.support.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_c1b0a90d1351",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → webdisk.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_9eedc4e6e7f7",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → webmail.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_4aa32bc728e1",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → bakkta.website.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_08bb6b100a56",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → bakktat.website.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_60ba1e0176d9",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → bakktatr.website.coindream.site"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_f96ca83d3e62",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_f96ca83d3e62",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "ip_6f9d4b074601",
+      "target": "domain_f96ca83d3e62",
+      "type": "shared_hosting_with",
+      "weight": 0.7,
+      "evidence": "Same IP hosts → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_b5cec5b6828d",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.9.5"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_b187cc6ec65f",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.41.28"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_587af3afe91f",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.10.18"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_54e32fca6f4a",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.11.10"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "subdomain_afd191c082ab",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → github-com.mail.protection.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_123d3b1f5714",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → qantik.co"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_55aa71656042",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 1817932023.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_873685e3d426",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 1907019119.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_da8e6be3ded2",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 211279420.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_8ad74dedd06f",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.391460683.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_d68b50764e8b",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 474144862.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_6ddad4752612",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 534296080.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_267a13117e26",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 565037368.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_ae7af4f61fc0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 831102601.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_f9ced6fbd114",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.964081180.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_984ed9ca1513",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.99016020.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_4ae84fc8267c",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → webdisk.mail.exchangelabs.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_c36fbc9701e9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.0913-loan.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_058ff599cbb2",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.1083-com.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_227fce0cc833",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.1278-men.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_2f50f38a2124",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.1430northlakeshoredrive-com.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_d7d5393ac4bd",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.17gre32-space.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_cd60c1df8063",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 1810kennedy-com.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_41576ff1c6dd",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → 1accordtech-com.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_d0709b44c549",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → mta-sts.1k1v-com.mail.eo.outlook.com"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_50548b147a50",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.40.2"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_50548b147a50",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.40.2"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_50bf37948f4a",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.10.2"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_50bf37948f4a",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.10.2"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_7de741d8ba2e",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.41.58"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_7de741d8ba2e",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 52.101.41.58"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_8c42d629ba23",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 40.93.192.1"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "ip_8c42d629ba23",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 40.93.192.1"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_afd191c082ab",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "ip_8d2504ffdc4f",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 205.251.193.165"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "ip_8d2504ffdc4f",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 205.251.193.165"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "subdomain_56c39f5c2608",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → ns-421.awsdns-52.com"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_4a27097cefd9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns4.natursteine.co.at"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_a56d948e23ec",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → dns4.4ft.co"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_7d8ecb4fd990",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.rfn.co"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_268055a9ec24",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns1.cuppett.com"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_4cf1761f9798",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns4.deadmanswitch.com"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_d1abf0f3b00f",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns4.rnuno.com"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_b570bab1eea2",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns4.id-t.sse-ns.com"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_04cb703bc126",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns2.leagueworks.net"
+    },
+    {
+      "source": "domain_56c39f5c2608",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "ip_17027b262cda",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 205.251.197.3"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "subdomain_7161800bb549",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → ns-1283.awsdns-32.org"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_0a0e4ae7bb6f",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.uhubdns.biz"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_86502201e152",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.abovemodern1.com"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_e7ea6a9650d8",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.araxis.com"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_1b803bd6052d",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → zed.ns.dnscod.com"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_4adafaac332e",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3-a8.warnerbros.com"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_6b20e082e702",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → g-ns-1283.awsdns-63.org"
+    },
+    {
+      "source": "domain_7161800bb549",
+      "target": "domain_c9d2655f7c52",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.eclipseretailsolutions.co.uk"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "ip_8f358f66df86",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 198.51.44.8"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "subdomain_a49db0a43fd5",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → dns1.p08.nsone.net"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_67c9b0da9d09",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns2.firstpr.com.au"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_a00747d285be",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → esimplesauditor.com.br"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_b0b2429cd5b0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.igreeneconomiabr.com.br"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_6da6c9ea13ae",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.workflowgestao.com.br"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_8972d48c2534",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ecuatorianos.ca"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_a5c3262ee934",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → bostontechsystems.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_95aad1d9a8b7",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns8.demysdns.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_c532ae61e9dc",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.erickaduru.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_2892a1aac06e",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.gp3030.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_a89bf32fb701",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.louperetailadvisory.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_e680180fc50d",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.perfect-presence.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_ff0d5359ab7d",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → es.redhotchilipaintersllc.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_9370f8f6316c",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.routertoken.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_65d94d6cfd17",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → en.spacecoastboatmanagement.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_10f7ffcf06b8",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → shenzhen.yueyimei.com"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_ac3c92a82b11",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → greenpowersprouts.de"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_e11d941a8c06",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.nextcloud.greenpowersprouts.de"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_fe25e1483e7e",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.greenpowersprouts.de"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_a058ed107a4f",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns1.mailmeow.de"
+    },
+    {
+      "source": "domain_a49db0a43fd5",
+      "target": "domain_60368b6927c9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → xn--frderverein-kita-wewer-uhc.de"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "ip_27b912a27e08",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 205.251.198.171"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "subdomain_ec6d03b7a6d5",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → ns-1707.awsdns-21.co.uk"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_df4b1d16b1fa",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → pns02.digibean.com.au"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_be6205fd4ec5",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.hosted.by.actionverb.com"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_281b64390906",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.actionverb.com"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_6e1f1919b480",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns3.synapsewireless.com"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_3e95bb814bc9",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns2.warnerbros.com"
+    },
+    {
+      "source": "domain_ec6d03b7a6d5",
+      "target": "domain_141c5a6400b0",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns-4.dtcc.datawebstore.net"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "ip_5c459d39fba8",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 198.51.45.8"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "subdomain_deee852837df",
+      "type": "has_subdomain",
+      "weight": 0.8,
+      "evidence": "Subdomain enumeration → dns2.p08.nsone.net"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "domain_2a135a73385f",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → www.spacecoastboatmanagement.com"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "domain_58deb4d78a58",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → ns2.mailmeow.de"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "domain_6859efbf8203",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → dns2.p08.d.section.io"
+    },
+    {
+      "source": "domain_deee852837df",
+      "target": "domain_d016cae3b9ba",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → dns2.piapp.com.tw"
+    },
+    {
+      "source": "domain_5f931770b70d",
+      "target": "ip_162e2bac9d7f",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 198.51.44.72"
+    },
+    {
+      "source": "domain_5f931770b70d",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_37b09660301f",
+      "target": "ip_77f52b595b4b",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 205.251.194.8"
+    },
+    {
+      "source": "domain_37b09660301f",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    },
+    {
+      "source": "domain_b71d974d3c22",
+      "target": "ip_48186af3c3e2",
+      "type": "resolves_to",
+      "weight": 1.0,
+      "evidence": "DNS A record → 198.51.45.72"
+    },
+    {
+      "source": "domain_b71d974d3c22",
+      "target": "domain_f96ca83d3e62",
+      "type": "shares_ip_with",
+      "weight": 0.6,
+      "evidence": "Same IP host → API count exceeded - Increase Quota with Membership"
+    }
+  ],
+  "modules_run": [
+    {
+      "trigger": "module_5_mx_record",
+      "metadata": {
+        "module_id": 5,
+        "module_name": "DomainMapper",
+        "trigger_entity": "github-com.mail.protection.outlook.com",
+        "entities_added": 6,
+        "depth": 1
+      },
+      "ts": "2026-06-29T01:29:09.741949+00:00"
+    }
+  ],
+  "geo_points": [
+    {
+      "entity_id": "ip_6f9d4b074601",
+      "type": "ip",
+      "value": "140.82.116.3",
+      "lat": 37.7823,
+      "lon": -122.391,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "country_f253efe302d3",
+      "type": "country",
+      "value": "United States",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "source": "country_capital",
+      "confidence": 0.75,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "city_f4334fdfa1c7",
+      "type": "city",
+      "value": "San Francisco",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "source": "city_table",
+      "confidence": 0.92,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "gps_c2100b83b14f",
+      "type": "gps",
+      "value": "37.782300,-122.391000",
+      "lat": 37.7823,
+      "lon": -122.391,
+      "source": "gps_parsed",
+      "confidence": 1.0,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_b5cec5b6828d",
+      "type": "ip",
+      "value": "52.101.9.5",
+      "lat": 36.677696,
+      "lon": -78.37471,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_b187cc6ec65f",
+      "type": "ip",
+      "value": "52.101.41.28",
+      "lat": 37.783,
+      "lon": -122.417,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_587af3afe91f",
+      "type": "ip",
+      "value": "52.101.10.18",
+      "lat": 36.677696,
+      "lon": -78.37471,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_54e32fca6f4a",
+      "type": "ip",
+      "value": "52.101.11.10",
+      "lat": 29.4167,
+      "lon": -98.5,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_8d2504ffdc4f",
+      "type": "ip",
+      "value": "205.251.193.165",
+      "lat": 39.0438,
+      "lon": -77.4874,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_17027b262cda",
+      "type": "ip",
+      "value": "205.251.197.3",
+      "lat": 38.9549,
+      "lon": -77.4045,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_8f358f66df86",
+      "type": "ip",
+      "value": "198.51.44.8",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_27b912a27e08",
+      "type": "ip",
+      "value": "205.251.198.171",
+      "lat": 39.0438,
+      "lon": -77.4874,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_5c459d39fba8",
+      "type": "ip",
+      "value": "198.51.45.8",
+      "lat": 43.6445,
+      "lon": -79.3843,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_162e2bac9d7f",
+      "type": "ip",
+      "value": "198.51.44.72",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_77f52b595b4b",
+      "type": "ip",
+      "value": "205.251.194.8",
+      "lat": 37.3387,
+      "lon": -121.885,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_48186af3c3e2",
+      "type": "ip",
+      "value": "198.51.45.72",
+      "lat": 43.6445,
+      "lon": -79.3843,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_50548b147a50",
+      "type": "ip",
+      "value": "52.101.40.2",
+      "lat": 41.13925,
+      "lon": -104.816154,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_50bf37948f4a",
+      "type": "ip",
+      "value": "52.101.10.2",
+      "lat": 36.677696,
+      "lon": -78.37471,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_7de741d8ba2e",
+      "type": "ip",
+      "value": "52.101.41.58",
+      "lat": 37.783,
+      "lon": -122.417,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    },
+    {
+      "entity_id": "ip_8c42d629ba23",
+      "type": "ip",
+      "value": "40.93.192.1",
+      "lat": 41.5908,
+      "lon": -93.6208,
+      "source": "ip-api.com",
+      "confidence": 0.95,
+      "timestamp": 1782696549.74196
+    }
+  ],
+  "entity_count": 236,
+  "relationship_count": 272,
+  "geo_count": 20
+}

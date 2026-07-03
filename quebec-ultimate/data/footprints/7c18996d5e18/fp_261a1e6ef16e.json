@@ -1,0 +1,42 @@
+{
+  "snapshot_id": "fp_261a1e6ef16e",
+  "session_id": "7c18996d5e18",
+  "trigger": "module_6_domain",
+  "timestamp": "2026-06-29T01:21:12.308411+00:00",
+  "timestamp_unix": 1782696072.3084397,
+  "entities": [
+    {
+      "id": "domain_dbe102aac2",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "7c18996d5e18",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:21:10.657721"
+    }
+  ],
+  "relationships": [],
+  "modules_run": [
+    {
+      "trigger": "module_6_domain",
+      "metadata": {
+        "module_id": 6,
+        "module_name": "IPTracker",
+        "trigger_entity": "github.com",
+        "entities_added": 0,
+        "depth": 0
+      },
+      "ts": "2026-06-29T01:21:12.308411+00:00"
+    }
+  ],
+  "geo_points": [],
+  "entity_count": 1,
+  "relationship_count": 0,
+  "geo_count": 0
+}

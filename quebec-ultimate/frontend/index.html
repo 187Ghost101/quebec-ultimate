@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSIN CHAIN QUEBEC ULTIMATE — Unified View</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+<!-- Using cytoscape-core built-in layouts (cose, breadthfirst, concentric, grid) - no extensions needed -->
+<style>
+  :root {
+    --bg-0:#04060d; --bg-1:#0a1020; --bg-2:#131a30; --bg-3:#1c2540;
+    --border:#2a3558; --acc:#4ecdc4; --acc2:#ffd60a; --acc3:#ff6b6b;
+    --acc4:#a78bfa; --acc5:#10b981; --acc6:#f59e0b;
+    --text:#e8edf5; --dim:#94a3b8; --muted:#64748b;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg-0); color:var(--text); height:100vh; overflow:hidden;
+    background-image: radial-gradient(circle at 20% 10%, rgba(78,205,196,0.06) 0%, transparent 50%),
+                      radial-gradient(circle at 85% 90%, rgba(167,139,250,0.05) 0%, transparent 50%);
+  }
+  .app { display:grid; grid-template-rows:54px 64px 1fr; height:100vh; }
+  .topbar {
+    background:linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+    border-bottom:1px solid var(--border); padding:0 18px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .topbar h1 { font-size:15px; color:var(--acc2); letter-spacing:2px;
+               font-weight:800; text-shadow:0 0 12px rgba(255,214,10,0.35); }
+  .topbar h1 span { color:var(--acc); font-size:10px; letter-spacing:3px;
+                    margin-left:10px; font-weight:500; }
+  .topbar .live { display:flex; align-items:center; gap:6px; font-size:10px;
+                  color:var(--dim); font-family:monospace; }
+  .live .dot { width:8px; height:8px; background:var(--ok); border-radius:50%;
+               box-shadow:0 0 8px var(--ok); animation:lp 1.4s infinite; }
+  @keyframes lp { 50% { opacity:0.4; } }
+
+  .searchbar {
+    background:var(--bg-1); border-bottom:1px solid var(--border);
+    padding:10px 18px; display:grid;
+    grid-template-columns:1fr auto auto auto auto auto auto auto auto auto auto; gap:8px;
+    align-items:center;
+  }
+  .btn-photo {
+    background:linear-gradient(135deg, rgba(167,139,250,0.18), rgba(78,205,196,0.12));
+    border:1px solid var(--acc4);
+    color:var(--acc4);
+    font-weight:600;
+  }
+  .btn-photo:hover {
+    background:linear-gradient(135deg, rgba(167,139,250,0.32), rgba(78,205,196,0.22));
+    box-shadow:0 0 14px rgba(167,139,250,0.4);
+  }
+  .searchbar input {
+    background:var(--bg-2); border:1px solid var(--border); color:var(--text);
+    padding:10px 14px; border-radius:6px; font-size:13px; font-family:monospace;
+    outline:none; transition:all 0.15s;
+  }
+  .searchbar input:focus { border-color:var(--acc); box-shadow:0 0 0 2px rgba(78,205,196,0.2); }
+  .btn {
+    background:var(--acc); color:#000; border:none; padding:10px 14px;
+    border-radius:6px; font-size:11px; font-weight:700; cursor:pointer;
+    letter-spacing:1px; text-transform:uppercase; transition:all 0.15s;
+    white-space:nowrap;
+  }
+  .btn:hover { background:#6ee0d8; transform:translateY(-1px); }
+  .btn:disabled { opacity:0.4; cursor:not-allowed; }
+  .btn-ghost { background:var(--bg-2); border:1px solid var(--border); color:var(--dim); }
+  .btn-ghost:hover { color:var(--acc); border-color:var(--acc); }
+  .btn-demo { background:linear-gradient(135deg, var(--acc4), var(--acc2));
+              color:#000; box-shadow:0 0 12px rgba(167,139,250,0.3); }
+  .btn-demo:hover { box-shadow:0 0 18px rgba(167,139,250,0.5); }
+
+  .layout { display:grid; grid-template-columns:320px 1fr 360px; height:100%;
+            overflow:hidden; }
+
+  /* LEFT PANEL - Module Tracker */
+  .left-panel { background:var(--bg-1); border-right:1px solid var(--border);
+                display:flex; flex-direction:column; overflow:hidden; }
+  .panel-title { font-size:10px; color:var(--acc); letter-spacing:2px;
+                 padding:12px 14px; text-transform:uppercase; font-weight:600;
+                 border-bottom:1px solid var(--border);
+                 display:flex; justify-content:space-between; align-items:center; }
+  .panel-title .count { color:var(--muted); font-family:monospace; }
+
+  .modules-list { flex:1; overflow-y:auto; padding:8px; }
+  .mod-card {
+    background:var(--bg-2); border:1px solid var(--border); border-radius:6px;
+    padding:10px 12px; margin-bottom:6px; transition:all 0.2s;
+    display:grid; grid-template-columns:auto 1fr auto; gap:10px;
+    align-items:center;
+  }
+  .mod-card.queued { opacity:0.4; }
+  .mod-card.running { border-color:var(--acc2); box-shadow:0 0 8px rgba(255,214,10,0.3); }
+  .mod-card.done { border-color:var(--ok); }
+  .mod-card.failed { border-color:var(--acc3); }
+  .mod-card .icon { font-size:18px; }
+  .mod-card .name { font-size:11px; font-weight:600; color:var(--text); }
+  .mod-card .sub { font-size:9px; color:var(--muted); margin-top:2px; }
+  .mod-card .badge {
+    font-size:9px; padding:2px 6px; border-radius:10px; font-family:monospace;
+    background:var(--bg-3); color:var(--dim);
+  }
+  .mod-card.running .badge { background:var(--acc2); color:#000; animation:lp 0.8s infinite; }
+  .mod-card.done .badge { background:var(--ok); color:#000; }
+
+  .activity-log { flex:0 0 30%; border-top:1px solid var(--border);
+                  overflow-y:auto; padding:8px 12px; background:var(--bg-0); }
+  .log-entry { font-family:monospace; font-size:10px; padding:3px 0;
+               color:var(--dim); border-bottom:1px dashed var(--bg-2); }
+  .log-entry .ts { color:var(--muted); }
+  .log-entry .ev { color:var(--acc); font-weight:600; }
+  .log-entry.err .ev { color:var(--acc3); }
+
+  /* CENTER - Graph + Map stacked */
+  .center-panel { display:grid; grid-template-rows:1fr 200px;
+                  border-right:1px solid var(--border); overflow:hidden; }
+  .graph-section { position:relative; background:var(--bg-0); overflow:hidden; }
+  .map-section { position:relative; background:var(--bg-2);
+                 border-top:1px solid var(--border); }
+  #cy-graph { position:absolute; inset:0; }
+  #mini-map { position:absolute; inset:0; }
+
+  .section-overlay {
+    position:absolute; top:10px; left:10px; z-index:10;
+    background:rgba(10,15,30,0.92); border:1px solid var(--border);
+    padding:8px 14px; border-radius:6px; font-size:10px;
+    color:var(--acc); letter-spacing:1.5px; text-transform:uppercase;
+    font-weight:600; backdrop-filter:blur(8px);
+  }
+  .section-overlay .stats-line { font-family:monospace; color:var(--dim);
+                                 letter-spacing:0.5px; margin-top:3px;
+                                 text-transform:none; font-size:10px; }
+
+  .graph-controls {
+    position:absolute; top:10px; right:10px; z-index:10;
+    display:flex; gap:6px;
+  }
+  .gc-btn {
+    background:rgba(10,15,30,0.92); border:1px solid var(--border);
+    color:var(--dim); padding:6px 10px; border-radius:6px;
+    font-size:10px; cursor:pointer; transition:all 0.15s;
+    text-transform:uppercase; letter-spacing:1px;
+  }
+  .gc-btn:hover { color:var(--acc); border-color:var(--acc); }
+  .gc-btn.active { color:var(--acc2); border-color:var(--acc2); }
+
+  .legend {
+    position:absolute; bottom:10px; left:10px; z-index:10;
+    background:rgba(10,15,30,0.92); border:1px solid var(--border);
+    padding:8px 12px; border-radius:6px; display:flex; gap:10px;
+    flex-wrap:wrap; max-width:60%; backdrop-filter:blur(8px);
+  }
+  .legend-item { display:flex; align-items:center; gap:5px; font-size:9px;
+                 color:var(--dim); font-family:monospace; }
+  .legend-dot { width:10px; height:10px; border-radius:50%; }
+
+  /* RIGHT PANEL - Timeline + Details */
+  .right-panel { background:var(--bg-1); display:flex;
+                 flex-direction:column; overflow:hidden; }
+  .entity-details { padding:14px; overflow-y:auto; max-height:50%; border-bottom:1px solid var(--border); }
+  .ed-type { font-size:10px; color:var(--acc2); letter-spacing:2px;
+             text-transform:uppercase; font-weight:600; }
+  .ed-value { font-size:13px; color:var(--text); margin:6px 0;
+              word-break:break-all; font-family:monospace; }
+  .ed-meta { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:10px; }
+  .ed-meta div { font-size:10px; }
+  .ed-meta .k { color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+  .ed-meta .v { color:var(--text); font-family:monospace; word-break:break-all; }
+
+  .timeline-section { flex:1; overflow-y:auto; padding:12px 14px; }
+  .timeline-track { position:relative; padding-left:18px;
+                    border-left:2px solid var(--border); margin-top:8px; }
+  .tl-event {
+    position:relative; padding:6px 0 10px; font-size:10px;
+    color:var(--dim); border-bottom:1px dashed var(--bg-2);
+  }
+  .tl-event:before {
+    content:''; position:absolute; left:-22px; top:8px;
+    width:8px; height:8px; background:var(--acc); border-radius:50%;
+    border:2px solid var(--bg-1);
+  }
+  .tl-event .tl-mod { color:var(--acc); font-weight:600; }
+  .tl-event .tl-val { color:var(--text); font-family:monospace; }
+  .tl-event .tl-time { color:var(--muted); font-size:9px; }
+
+  .no-data { text-align:center; padding:30px 10px; color:var(--muted);
+             font-size:11px; font-style:italic; }
+
+  .pulse { animation:pulse 1.2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity:0.5; } }
+
+  /* stats in topbar */
+  .quickstats { display:flex; gap:14px; font-family:monospace; font-size:11px; }
+  .quickstats div { color:var(--dim); }
+  .quickstats .v { color:var(--acc); font-weight:600; }
+
+  /* export split button */
+  .export-split {
+    position:relative;
+    display:flex;
+    gap:0;
+  }
+  .export-split .export-main {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-right:1px solid var(--border);
+  }
+  .export-split .export-arrow {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    padding:8px 10px;
+    font-size:10px;
+  }
+  .export-menu {
+    display:none;
+    position:absolute;
+    top:calc(100% + 6px);
+    right:0;
+    z-index:100;
+    background:rgba(10,16,32,0.98);
+    border:1px solid var(--acc);
+    border-radius:8px;
+    padding:6px;
+    min-width:240px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.6), 0 0 16px rgba(78,205,196,0.2);
+    backdrop-filter:blur(10px);
+  }
+  .export-menu.open { display:block; }
+  .export-menu-item {
+    display:flex;
+    gap:10px;
+    padding:8px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:background 0.15s;
+    align-items:flex-start;
+  }
+  .export-menu-item:hover {
+    background:rgba(78,205,196,0.12);
+  }
+  .export-menu-item .em-icon {
+    font-size:18px;
+    line-height:1;
+    margin-top:2px;
+  }
+  .export-menu-item .em-title {
+    color:var(--text);
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.5px;
+  }
+  .export-menu-item .em-desc {
+    color:var(--dim);
+    font-size:9px;
+    margin-top:2px;
+    font-family:monospace;
+  }
+
+  /* correlation ribbon */
+  .corr-ribbon {
+    position:absolute; bottom:10px; right:10px; z-index:10;
+    background:rgba(10,15,30,0.92); border:1px solid var(--acc4);
+    padding:6px 12px; border-radius:6px; font-size:10px;
+    color:var(--acc4); font-family:monospace; max-width:240px;
+    backdrop-filter:blur(8px); box-shadow:0 0 12px rgba(167,139,250,0.25);
+  }
+
+  /* ===== FACEMATCH MODALS (Module 14) ===== */
+  .face-modal {
+    position:fixed; inset:0; z-index:1000;
+    background:rgba(0,0,0,0.7); backdrop-filter:blur(8px);
+    display:none; align-items:center; justify-content:center;
+  }
+  .face-modal.open { display:flex; }
+  .face-modal-inner {
+    background:linear-gradient(180deg, var(--bg-1), var(--bg-0));
+    border:1px solid var(--acc4); border-radius:12px;
+    padding:24px; max-width:900px; width:92%;
+    max-height:86vh; overflow-y:auto;
+    box-shadow:0 0 40px rgba(167,139,250,0.3);
+  }
+  .face-modal-inner h2 {
+    color:var(--acc4); font-size:18px; letter-spacing:1.5px;
+    margin-bottom:14px; text-shadow:0 0 8px rgba(167,139,250,0.4);
+  }
+  .face-modal-inner h2 .close-x {
+    float:right; cursor:pointer; color:var(--dim);
+    font-size:22px; font-weight:300; padding:0 8px;
+  }
+  .face-modal-inner h2 .close-x:hover { color:var(--acc3); }
+  .face-drop {
+    border:2px dashed var(--acc4); border-radius:8px;
+    padding:30px; text-align:center; color:var(--dim);
+    background:rgba(167,139,250,0.04); margin:10px 0;
+    cursor:pointer; transition:all 0.2s;
+  }
+  .face-drop:hover, .face-drop.dragover {
+    background:rgba(167,139,250,0.12);
+    border-color:var(--acc); color:var(--acc);
+  }
+  .face-drop input[type=file] { display:none; }
+  .face-preview {
+    max-width:280px; max-height:280px;
+    border-radius:6px; border:1px solid var(--border);
+    display:block; margin:8px auto;
+  }
+  .face-result {
+    background:rgba(0,0,0,0.3); border:1px solid var(--border);
+    border-radius:6px; padding:12px; margin-top:12px;
+    font-family:monospace; font-size:11px; color:var(--text);
+  }
+  .face-result .lbl { color:var(--dim); display:inline-block; min-width:130px; }
+  .face-result .ok { color:var(--acc5); font-weight:600; }
+  .face-result .warn { color:var(--acc6); }
+  .face-result .err { color:var(--acc3); }
+  .face-result h3 {
+    color:var(--acc4); font-size:13px; letter-spacing:1px;
+    margin:10px 0 6px 0; padding-bottom:4px;
+    border-bottom:1px dashed var(--border);
+  }
+  .person-card {
+    background:var(--bg-2); border:1px solid var(--border);
+    border-radius:8px; padding:12px; margin:6px 0;
+    display:grid; grid-template-columns:auto 1fr auto;
+    gap:10px; align-items:center;
+  }
+  .person-card .pavatar {
+    width:54px; height:54px; border-radius:50%;
+    background:linear-gradient(135deg, var(--acc4), var(--acc));
+    display:flex; align-items:center; justify-content:center;
+    color:var(--bg-0); font-size:22px; font-weight:700;
+  }
+  .person-card .pinfo { font-size:11px; }
+  .person-card .pinfo .pname { color:var(--acc4); font-size:13px; font-weight:600; }
+  .person-card .pinfo .pmeta { color:var(--dim); font-size:10px; margin-top:2px; }
+  .person-card .pbtn {
+    background:var(--bg-1); border:1px solid var(--acc);
+    color:var(--acc); padding:5px 10px; border-radius:4px;
+    font-size:10px; cursor:pointer;
+  }
+  .person-card .pbtn:hover { background:var(--acc); color:var(--bg-0); }
+  .person-card .pbtn.danger { border-color:var(--acc3); color:var(--acc3); }
+  .person-card .pbtn.danger:hover { background:var(--acc3); color:var(--bg-0); }
+  .face-grid {
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));
+    gap:8px; margin-top:10px;
+  }
+  .face-thumb {
+    background:var(--bg-2); border:1px solid var(--border);
+    border-radius:6px; padding:8px; text-align:center;
+    cursor:pointer; transition:all 0.15s;
+  }
+  .face-thumb:hover {
+    border-color:var(--acc4);
+    box-shadow:0 0 10px rgba(167,139,250,0.3);
+  }
+  .face-thumb.selected { border-color:var(--acc5); background:rgba(16,185,129,0.1); }
+  .face-thumb .ftid { color:var(--acc4); font-size:10px; font-family:monospace;
+                       overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .face-thumb .ftmeta { color:var(--dim); font-size:9px; margin-top:2px; }
+  .face-thumb .ftbadge { background:var(--acc4); color:var(--bg-0); padding:1px 5px;
+                          border-radius:8px; font-size:8px; font-weight:600; margin-top:3px; display:inline-block; }
+  .compare-bar {
+    position:sticky; bottom:0; background:var(--bg-1);
+    border-top:1px solid var(--acc5); padding:10px;
+    display:flex; gap:10px; align-items:center;
+    margin:14px -24px -24px -24px;
+  }
+  .compare-bar .ck { color:var(--dim); font-size:11px; flex:1; }
+  .batch-zone {
+    border:2px dashed var(--acc); border-radius:8px;
+    padding:24px; text-align:center; color:var(--dim);
+    background:rgba(78,205,196,0.04); margin:10px 0;
+    cursor:pointer;
+  }
+  .batch-zone:hover { background:rgba(78,205,196,0.1); color:var(--acc); }
+  .batch-item {
+    background:var(--bg-2); border-left:3px solid var(--acc5);
+    padding:8px 12px; margin:4px 0; border-radius:4px;
+    font-family:monospace; font-size:10px;
+  }
+  .batch-item.error { border-left-color:var(--acc3); }
+  .stat-pill {
+    display:inline-block; background:var(--bg-2);
+    border:1px solid var(--border); border-radius:12px;
+    padding:3px 10px; margin:2px; font-size:10px;
+    color:var(--dim); font-family:monospace;
+  }
+  .stat-pill strong { color:var(--acc); }
+  .gps-auto-pin {
+    position:absolute; top:10px; right:10px; z-index:20;
+    background:rgba(16,185,129,0.15); border:1px solid var(--acc5);
+    color:var(var5); padding:6px 12px; border-radius:6px;
+    font-size:10px; cursor:pointer;
+  }
+
+  .heatmap-canvas {
+    width:100%; height:300px; background:#000; border-radius:8px;
+    margin-top:10px; position:relative; overflow:hidden;
+  }
+  .heatmap-cell {
+    position:absolute; border-radius:50%;
+    background:radial-gradient(circle, rgba(255,107,107,0.7), rgba(255,214,10,0.3) 70%, transparent);
+    pointer-events:none;
+  }
+  .timeline-event {
+    background:var(--bg-2); border-left:3px solid var(--acc4);
+    padding:6px 10px; margin:3px 0; border-radius:4px;
+    font-family:monospace; font-size:10px;
+  }
+  .person-name-input {
+    background:var(--bg-0); border:1px solid var(--acc5);
+    color:var(--acc5); padding:3px 8px; border-radius:4px;
+    font-size:11px; width:120px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <h1>🏴‍☠️ OSIN CHAIN QUEBEC ULTIMATE <span>UNIFIED VIEW · GHOST1O1</span></h1>
+    <div class="quickstats">
+      <div>NODES <span class="v" id="qs-nodes">0</span></div>
+      <div>EDGES <span class="v" id="qs-edges">0</span></div>
+      <div>CORR <span class="v" id="qs-corr">0</span></div>
+      <div>SESSION <span class="v" id="qs-session">—</span></div>
+    </div>
+    <div class="live"><span class="dot"></span> <span id="conn-status">CONNECTED</span></div>
+  </div>
+
+  <div class="searchbar">
+    <input id="search-input" type="text" placeholder="phone +15145550199 · email john@example.com · username octocat · IP 8.8.8.8 · domain github.com · name John Doe">
+    <button class="btn" id="btn-run">⚡ RUN</button>
+    <button class="btn btn-demo" id="btn-demo">🎲 DEMO</button>
+    <button class="btn btn-ghost" id="btn-cascade">🌊 CASCADE</button>
+    <button class="btn btn-ghost" id="btn-clear">⟲ CLEAR</button>
+    <button class="btn btn-photo" id="btn-upload" title="Upload photo for facial recognition (Module 14 FaceMatch)">📷 PHOTO</button>
+    <button class="btn btn-ghost" id="btn-facesearch" title="Search indexed faces by photo">🔍 FACE-SEARCH</button>
+    <button class="btn btn-ghost" id="btn-faceindex" title="Browse all indexed faces + persons">👤 PERSONS</button>
+    <button class="btn btn-ghost" id="btn-heatmap" title="Density heatmap of GPS-tagged faces">🔥 HEATMAP</button>
+    <button class="btn btn-ghost" id="btn-sessions" title="Sessions list + cross-session face search">🗂️ SESSIONS</button>
+    <button class="btn btn-ghost" id="btn-heatmap" title="Face sightings density heatmap">🔥 HEATMAP</button>
+    <div class="export-split" id="export-split">
+      <button class="btn btn-ghost export-main" id="btn-export" title="Exporte le graphe complet (clique sur la flèche pour le format)">📥 JSON</button>
+      <button class="btn btn-ghost export-arrow" id="btn-export-arrow" title="Choisis le format d'export">▾</button>
+      <div class="export-menu" id="export-menu">
+        <div class="export-menu-item" data-format="json" title="Graphe structuré complet (recommandé)">
+          <span class="em-icon">📥</span>
+          <div>
+            <div class="em-title">JSON</div>
+            <div class="em-desc">Graphe structuré · toutes entités/relations</div>
+          </div>
+        </div>
+        <div class="export-menu-item" data-format="pdf" title="Rapport PDF formaté (6 pages)">
+          <span class="em-icon">📄</span>
+          <div>
+            <div class="em-title">PDF</div>
+            <div class="em-desc">Rapport formaté Ghost1o1 palette</div>
+          </div>
+        </div>
+        <div class="export-menu-item" data-format="png" title="Capture PNG du graphe Cytoscape">
+          <span class="em-icon">🖼️</span>
+          <div>
+            <div class="em-title">PNG</div>
+            <div class="em-desc">Screenshot du graphe actuel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- LEFT: Module Tracker -->
+    <div class="left-panel">
+      <div class="panel-title">
+        <span>📡 Modules Fired</span>
+        <span class="count" id="polling-indicator" style="color:var(--muted)">⏸ idle</span>
+        <span class="count"><span id="mod-done">0</span>/12</span>
+      </div>
+      <div class="modules-list" id="modules-list">
+        <div class="no-data">Lance une recherche pour voir les modules s'activer.</div>
+      </div>
+      <div class="activity-log" id="activity-log">
+        <div class="panel-title"><span>📜 Activity Stream</span></div>
+      </div>
+    </div>
+
+    <!-- CENTER: Graph + Map -->
+    <div class="center-panel">
+      <div class="graph-section">
+        <div id="cy-graph"></div>
+        <div class="section-overlay">
+          🔗 Graphe de Corrélation
+          <div class="stats-line" id="graph-stats">En attente...</div>
+        </div>
+        <div class="graph-controls">
+          <button class="gc-btn active" data-layout="cose-bilkent">FORCE</button>
+          <button class="gc-btn" data-layout="concentric">RADIAL</button>
+          <button class="gc-btn" data-layout="dagre">HIÉRARCHIQUE</button>
+          <button class="gc-btn" data-layout="grid">GRILLE</button>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="corr-ribbon" id="corr-ribbon" style="display:none">
+          🎯 Corrélations actives détectées
+        </div>
+      </div>
+      <div class="map-section">
+        <div id="mini-map"></div>
+        <div class="section-overlay">
+          🌍 Cartographie
+          <div class="stats-line" id="map-stats">Aucune coordonnée.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Details + Timeline -->
+    <div class="right-panel">
+      <div class="entity-details" id="entity-details">
+        <div class="no-data">👆 Clique un nœud pour voir ses corrélations.</div>
+      </div>
+      <div class="panel-title">
+        <span>⏱ Timeline Investigation</span>
+        <span class="count"><span id="tl-count">0</span></span>
+      </div>
+      <div class="timeline-section">
+        <div class="no-data">La timeline apparaîtra après une recherche.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MODULE 14 FACEMATCH MODALS ═══════════ -->
+
+<!-- Face Search modal -->
+<div class="face-modal" id="face-search-modal">
+  <div class="face-modal-inner">
+    <h2>🔍 FACE-SEARCH <span class="close-x" onclick="closeFaceSearch()">×</span></h2>
+    <div style="color:var(--dim); font-size:11px; margin-bottom:8px;">
+      Upload une photo pour trouver tous les matches dans l'index de visages.
+      ArcFace 512-d (cosine) ou dHash 64-bit (Hamming).
+    </div>
+    <div class="face-drop" id="fs-drop">
+      📷 Drag-drop une photo OU click pour choisir
+      <input type="file" id="fs-file" accept="image/*">
+    </div>
+    <div style="text-align:center;">
+      <img class="face-preview" id="fs-preview" style="display:none;">
+    </div>
+    <div style="display:flex; gap:8px; margin-top:8px;">
+      <button class="btn" id="fs-go" disabled style="flex:1;">⚡ CHERCHER MATCHS</button>
+      <button class="btn btn-ghost" id="fs-threshold-down" title="Seuil cosine">− θ</button>
+      <span class="stat-pill">θ=<strong id="fs-thresh">0.50</strong></span>
+      <button class="btn btn-ghost" id="fs-threshold-up">+ θ</button>
+    </div>
+    <div class="face-result" id="fs-result" style="display:none;"></div>
+  </div>
+</div>
+
+<!-- Persons panel modal -->
+<div class="face-modal" id="persons-modal">
+  <div class="face-modal-inner">
+    <h2>👤 PERSONS & FACE INDEX <span class="close-x" onclick="closePersons()">×</span></h2>
+    <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost" id="per-refresh">⟲ REFRESH</button>
+      <button class="btn btn-ghost" id="per-compare" disabled>⚖️ COMPARE (2 selected)</button>
+      <button class="btn btn-ghost danger" id="per-clear">🗑️ CLEAR ALL</button>
+      <span id="per-stats" style="margin-left:auto; align-self:center;"></span>
+    </div>
+    <div id="per-clusters" style="margin-bottom:14px;"></div>
+    <h3 style="color:var(--acc4); font-size:13px; letter-spacing:1px; margin:14px 0 8px 0;">📋 FACE INDEX</h3>
+    <div class="face-grid" id="per-grid"></div>
+    <div class="compare-bar" id="per-comparebar" style="display:none;">
+      <div class="ck"><span id="per-cktext">0/2 sélectionnés</span></div>
+      <button class="btn btn-ghost" id="per-cancel-compare">ANNULER</button>
+    </div>
+  </div>
+</div>
+
+<!-- Heatmap modal -->
+<div class="face-modal" id="heatmap-modal">
+  <div class="face-modal-inner">
+    <h2>🔥 FACE DENSITY HEATMAP <span class="close-x" onclick="closeHeatmap()">×</span></h2>
+    <div style="color:var(--dim); font-size:11px; margin-bottom:8px;">
+      Visualisation densité des visages vus avec coordonnées GPS. Rouge = haute densité.
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:10px;">
+      <button class="btn btn-ghost" id="heat-refresh">⟲ REFRESH</button>
+      <span class="stat-pill">cellule <strong id="heat-cell">1.0°</strong></span>
+      <button class="btn btn-ghost" id="heat-cell-down">−</button>
+      <button class="btn btn-ghost" id="heat-cell-up">+</button>
+      <span id="heat-total" style="margin-left:auto; align-self:center;"></span>
+    </div>
+    <div class="heatmap-canvas" id="heat-canvas"></div>
+    <div id="heat-clusters" style="margin-top:10px;"></div>
+  </div>
+</div>
+
+<!-- Batch upload modal -->
+<div class="face-modal" id="batch-modal">
+  <div class="face-modal-inner">
+    <h2>📦 BATCH UPLOAD <span class="close-x" onclick="closeBatch()">×</span></h2>
+    <div style="color:var(--dim); font-size:11px; margin-bottom:8px;">
+      Upload jusqu'à 20 photos d'un coup. Chaque photo est analysée par Module 14 FaceMatch
+      et les visages ajoutés à l'index automatiquement.
+    </div>
+    <div class="batch-zone" id="batch-drop">
+      📦 Drag-drop plusieurs photos OU click
+      <input type="file" id="batch-file" accept="image/*" multiple>
+    </div>
+    <div id="batch-list" style="margin-top:10px;"></div>
+    <button class="btn" id="batch-go" disabled style="margin-top:10px; width:100%;">⚡ ANALYSER TOUT</button>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

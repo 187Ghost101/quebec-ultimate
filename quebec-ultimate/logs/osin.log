@@ -1,0 +1,178 @@
+2026-06-29 01:18:36 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 01:18:36 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 01:18:36 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 01:18:36 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 01:18:36 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 01:18:36 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 01:21:12 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:26 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:26 [ERROR] osin_chain: [Chain] Module 8 error: SocialGraph._cross_ref() got an unexpected keyword argument 'result'
+2026-06-29 01:21:28 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:29 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:31 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:33 [ERROR] osin_chain: [Chain] Module 5 error: cannot access local variable 'dns_data' where it is not associated with a value
+2026-06-29 01:21:34 [ERROR] osin_chain: [Chain] Module 8 error: SocialGraph._cross_ref() got an unexpected keyword argument 'result'
+2026-06-29 01:21:35 [ERROR] osin_chain: [Chain] Module 8 error: SocialGraph._cross_ref() got an unexpected keyword argument 'result'
+2026-06-29 01:21:36 [ERROR] osin_chain: [Chain] Module 8 error: SocialGraph._cross_ref() got an unexpected keyword argument 'result'
+2026-06-29 01:21:37 [ERROR] osin_chain: [Chain] Module 8 error: SocialGraph._cross_ref() got an unexpected keyword argument 'result'
+2026-06-29 01:23:28 [INFO] osin_chain: [Graph] Loaded 22 entities
+2026-06-29 01:23:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 01:23:28 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 01:23:28 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 01:23:28 [INFO] osin_chain: [Graph] Loaded 22 entities
+2026-06-29 01:23:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 01:23:28 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 01:23:28 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 04:39:38 [INFO] osin_chain: [Graph] Loaded 240 entities
+2026-06-29 04:39:38 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 04:39:38 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 04:39:38 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 04:39:38 [INFO] osin_chain: [Graph] Loaded 240 entities
+2026-06-29 04:39:38 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 04:39:38 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 04:39:38 [INFO] osin_chain: Components: dispatcher, graph, correlation, footprint, geo, ws
+2026-06-29 10:37:21 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:37:21 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:37:43 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:37:43 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:37:43 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:37:43 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:37:43 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:37:43 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:37:43 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:37:43 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:37:43 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:37:43 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:38:27 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:38:27 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:38:27 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:38:27 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:38:27 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:38:27 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:38:27 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:38:27 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:38:27 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:38:27 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:38:50 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:38:50 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:38:50 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:38:50 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:25 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:25 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:25 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:25 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:45 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:45 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:45 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:45 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:55 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:55 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:39:55 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:39:55 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:40:04 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:40:04 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:40:04 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:40:04 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:41:04 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:41:04 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:41:04 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:41:04 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:41:04 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:41:04 [INFO] osin_chain: [Graph] Loaded 269 entities
+2026-06-29 10:41:04 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:41:04 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:41:04 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:41:04 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:45:46 [INFO] osin_chain: [Graph] Loaded 270 entities
+2026-06-29 10:45:46 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:45:46 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:45:46 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:45:46 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 10:45:46 [INFO] osin_chain: [Graph] Loaded 270 entities
+2026-06-29 10:45:46 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 10:45:46 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 10:45:46 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 10:45:46 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 11:18:27 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:18:28 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:18:28 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:18:28 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 11:18:28 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 11:18:28 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:18:28 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:18:28 [INFO] osin_chain: OSIN CHAIN QUEBEC ULTIMATE v1.0.0-ghost ready
+2026-06-29 11:18:28 [INFO] osin_chain: Components: dispatcher, graph, correlation_v2, footprint, geo, ws
+2026-06-29 11:18:28 [INFO] osin_chain: ContentMiner module 13 (avatar pHash + bio link mining + GitHub API)
+2026-06-29 11:21:52 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:21:52 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:52 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:21:53 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:21:53 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:53 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:21:53 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:21:53 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:42:33 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:42:33 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:42:33 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:42:33 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:42:33 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:42:44 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:42:44 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:42:44 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:42:44 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:42:44 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:43:36 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:43:36 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:43:36 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:43:36 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:43:36 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:44:40 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:44:40 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:44:40 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:44:40 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:44:40 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:46:13 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:46:13 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:46:13 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:46:13 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:46:13 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:46:35 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 11:46:35 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:46:35 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 11:46:35 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 11:46:35 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:00:22 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 12:00:22 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:00:22 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:00:22 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:00:22 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:00:51 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 12:00:51 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:00:51 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:00:51 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:00:51 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:01:19 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 12:01:19 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:01:19 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:01:19 [INFO] osin_chain: [Graph] Loaded 271 entities
+2026-06-29 12:01:19 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:01:49 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar
+2026-06-29 12:01:49 [INFO] osin_chain: [Graph] Loaded 274 entities
+2026-06-29 12:01:49 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 12:01:49 [INFO] osin_chain: [Graph] Loaded 274 entities
+2026-06-29 12:01:49 [INFO] osin_chain: [Graph] NetworkX backend ready
+2026-06-29 17:03:28 [INFO] osin_chain: Module 14 FaceMatch ready — backends: OpenCV-Haar

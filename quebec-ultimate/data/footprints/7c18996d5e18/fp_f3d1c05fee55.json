@@ -1,0 +1,57 @@
+{
+  "snapshot_id": "fp_f3d1c05fee55",
+  "session_id": "7c18996d5e18",
+  "trigger": "module_4_domain",
+  "timestamp": "2026-06-29T01:21:12.951565+00:00",
+  "timestamp_unix": 1782696072.9515796,
+  "entities": [
+    {
+      "id": "domain_dbe102aac2",
+      "type": "domain",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 0.8,
+      "metadata": {
+        "root": true,
+        "session": "7c18996d5e18",
+        "lat": null,
+        "lon": null,
+        "geo_source": null
+      },
+      "created_at": "2026-06-29T01:21:10.657721"
+    },
+    {
+      "id": "username_99cd2175108d",
+      "type": "username",
+      "value": "github.com",
+      "source": "user_input",
+      "confidence": 1.0,
+      "metadata": {
+        "source_url": "",
+        "status": "verified",
+        "discovered_by": "UsernameSherlock",
+        "session": "7c18996d5e18",
+        "depth": 1
+      },
+      "created_at": "2026-06-29T01:21:12.948967"
+    }
+  ],
+  "relationships": [],
+  "modules_run": [
+    {
+      "trigger": "module_4_domain",
+      "metadata": {
+        "module_id": 4,
+        "module_name": "UsernameSherlock",
+        "trigger_entity": "github.com",
+        "entities_added": 1,
+        "depth": 0
+      },
+      "ts": "2026-06-29T01:21:12.951565+00:00"
+    }
+  ],
+  "geo_points": [],
+  "entity_count": 2,
+  "relationship_count": 0,
+  "geo_count": 0
+}
