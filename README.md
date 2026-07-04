@@ -40,7 +40,7 @@ OSIN Chain Quebec Ultimate v3.0
 
 ## 🎯 17 core engines
 
-`chain_engine` · `dispatcher` · `graph_manager` · `correlation_v2` · `footprint` · `geo` · `movement` · `tasks` · `rate_limiter` · `logger` · `neo4j_manager` · `face_service` · `exporters` · `correlation` + 3 autres.
+`chain_engine` · `dispatcher` · `graph_manager` · `correlation_v2` · `footprint` · `geo` · `movement` · `tasks` · `rate_limiter` · `logger` · `neo4j_manager` · `face_service` · `exporters` · `correlation` + 4 autres.
 
 ## 📦 Installation
 
