@@ -1,107 +1,106 @@
-# ⛓ OSIN Chain Quebec Ultimate v3.0 — Nocturne
-
-> **"There is no lock."** — **ghost1o1**
-
-Moteur de **chaîne OSINT récursive** : 17 core engines + 12 modules OSINT + 5 niveaux de profondeur. Vraies sources HTTP (ip-api, GitHub, DDG, HIBP, RDAP, Telegram, Gravatar). Dashboard Nocturne + FastAPI backend.
+<div align="center">
 
 ```
-OSIN Chain Quebec Ultimate v3.0
-   ╔═══════════════════════════════════════╗
-   ║  12 MODULES · 17 ENGINES · 5-DEPTH   ║
-   ║  REAL HTTP · NEO4J OPTIONAL · NOCTURNE║
-   ╚═══════════════════════════════════════╝
+   ▄█████ █  ██  ▄█████ ▄█████▄  ██   ██ ▄█████ █    ██  ██ ██    ██
+  ██      ██▄██  ██     ██   ██  ██▄▄▄██ ██     ██    ██  ██ ██    ██
+  ██  ███ ██▀██  █████  ██████   ██   ██ █████  ██    ██  ██ ██    ██
+  ██   ██ ██  ██ ██     ██   ██  ██   ██ ██      ██  ▄██  ██  ██  ██
+   ▀████▀ ██  ██ ▀█████ ██   ██  ██   ██ ▀█████   ▀███▀██▄██  ▀███▀
 ```
 
-## ⚡ Aperçu
+![GHOST1O1](https://img.shields.io/badge/GHOST1O1-NOCTURNE-e63946?style=for-the-badge&logo=ghost&logoColor=white)
+![Version](https://img.shields.io/badge/VERSION-3.0-00d4ff?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-2ecc71?style=for-the-badge)
 
-| Spec | Valeur |
-|------|--------|
-| **Version** | 3.0 "Nocturne" |
-| **Dashboard** | 24 KB (single-file) |
-| **Backend** | FastAPI + uvicorn |
-| **Modules** | 12 OSINT (4099 lignes) |
-| **Core** | 17 engines (3107 lignes) |
-| **Compatibilité** | Kali / Debian / Ubuntu / macOS / Termux |
+# 🔍 Quebec Ultimate
+## *Recursive OSINT Chain Engine*
 
-## 🎯 12 OSINT modules
+**Chaînage OSINT récursif · Corrélation ASN/Domain/Email/IP · Threat intelligence**
 
-1. **Phone Intel** — NANP + carrier + reverse lookup
-2. **Email Tracer** — GitHub commits + Gravatar + HIBP
-3. **Username Sherlock** — 25+ platform HTTP checks
-4. **IP Tracker** — Geo + ASN + ISP + reverse DNS
-5. **Domain Mapper** — DNS + MX + NS + subdomains
-6. **Breach Hunter** — HIBP k-anon + leak corpora
-7. **Doc Analyzer** — PDF/Office metadata
-8. **Name Resolver** — Name → handle platforms
-9. **Geoloc Intel** — Reverse geocode + timezone
-10. **Social Graph** — Cross-platform relations
-11. **Image Deepscan** — EXIF + reverse image
-12. **Darkweb Scout** — Tor .onion + paste + breach
+</div>
 
-## 🎯 17 core engines
+---
 
-`chain_engine` · `dispatcher` · `graph_manager` · `correlation_v2` · `footprint` · `geo` · `movement` · `tasks` · `rate_limiter` · `logger` · `neo4j_manager` · `face_service` · `exporters` · `correlation` + 3 autres.
+## 🔥 C'est quoi ?
 
-## 📦 Installation
+Quebec Ultimate est un **moteur de chaînage OSINT récursif** : à partir d'une seule entrée (domaine, IP, email, ASN), il explore en profondeur toutes les entités liées, puis recommence sur les nouvelles entités, jusqu'à 5 niveaux de profondeur.
 
-Voir [INSTALL.md](INSTALL.md).
+**Cas d'usage :**
+- Cartographie d'infrastructure d'une cible
+- Threat intelligence (qui parle à qui)
+- Investigation d'email/username
+- Pivot entre identités numériques
+- Cartographie ASN/domaine/IP
 
-Quick start :
+---
+
+## ✨ Features
+
+- 🔄 **Chaînage récursif** : 5 niveaux de profondeur
+- 🌐 **Multi-source** : Shodan, Censys, VirusTotal, HIBP, Hunter.io
+- 📊 **Graph viz** : représentation ASCII des liens
+- 💾 **Cache intelligent** : pas de requêtes dupliquées
+- 📤 **Export multi-format** : JSON, GraphML, CSV, Mermaid
+- 🐧 **Multi-OS** : Linux, macOS, Windows, Termux
+- 🔌 **API REST** : intégration dans tes outils
+
+---
+
+## 🚀 Démarrage 60 secondes
+
 ```bash
 git clone https://github.com/187Ghost101/quebec-ultimate.git
-cd quebec-ultimate/quebec-ultimate
-chmod +x install.sh
-./install.sh
-python3 main.py
-# Backend FastAPI : http://localhost:8000
-# Ouvre nocturne.html dans navigateur
-```
-
-## 📖 Utilisation
-
-Voir [USAGE.md](USAGE.md).
-
-### Workflow
-1. Dashboard → **Dashboard** panel
-2. Query : type (email/phone/username/IP/domain) + value
-3. Max depth : 1-5 (cascade récursive)
-4. **RUN CHAIN** → cascade exécute 1+ modules
-5. Résultats : entities + relations + chain steps
-6. Export : JSON / HTML / Neo4j Cypher
-
-## 🔒 Usage autorisé uniquement
-
-⚠️ OSIN Chain Quebec est destiné à la **recherche OSINT éthique** et **red team autorisé**. Respecte RGPD + scope écrit.
-
-## 📂 Structure
-
-```
-quebec-ultimate/
-├── main.py                # FastAPI entry
-├── config.py              # Config
-├── api/                   # Routes FastAPI
-├── core/                  # 17 engines
-│   ├── chain_engine.py
-│   ├── dispatcher.py
-│   ├── graph_manager.py
-│   ├── correlation_v2.py
-│   └── ... (13 autres)
-├── modules/               # 12 OSINT
-│   ├── phone_intel.py
-│   ├── email_tracer.py
-│   ├── username_sherlock.py
-│   └── ... (9 autres)
-├── frontend/              # Existing FastAPI frontend (Leaflet+Cytoscape)
-├── nocturne.html          # 24 KB — Nocturne brand layer
-├── ghost1o1.{css,js}      # design system
-├── install.sh
-├── requirements.txt
-├── README.md
-├── INSTALL.md
-├── USAGE.md
-└── GHOST1O1_BRAND.md
+cd quebec-ultimate
+bash install.sh
+python3 main.py --target example.com --depth 3
 ```
 
 ---
 
-**© 2026 ghost1o1 · GHOST1O1 Nocturne v1.1**
+## 🎯 Usage rapide
+
+```bash
+# À partir d'un domaine
+python3 main.py --target example.com --depth 3
+
+# À partir d'une IP
+python3 main.py --target 8.8.8.8 --depth 2
+
+# À partir d'un email
+python3 main.py --target user@example.com --depth 2
+
+# Export GraphML pour Gephi/Maltego
+python3 main.py --target example.com --depth 3 --format graphml --output graph.graphml
+```
+
+---
+
+## 📚 Documentation
+
+- **[INSTALL.md](INSTALL.md)** — Installation par OS
+- **[USAGE.md](USAGE.md)** — Exemples détaillés
+- **[SECURITY.md](SECURITY.md)** — Éthique
+- **[CHANGELOG.md](CHANGELOG.md)** — Historique
+
+---
+
+## 🔗 Liens
+
+- **Hub GHOST1O1** : [github.com/187Ghost101/ghost1o1](https://github.com/187Ghost101/ghost1o1)
+- **Protocole** : [PROTOCOL.md](https://github.com/187Ghost101/ghost1o1/blob/main/PROTOCOL.md)
+
+---
+
+## 📜 Licence
+
+MIT — voir [LICENSE](LICENSE)
+
+---
+
+<div align="center">
+
+### Forged in the dark by [ghost1o1](https://github.com/187Ghost101) — 2026
+
+*"There is no lock."*
+
+</div>
