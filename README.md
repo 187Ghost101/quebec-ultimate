@@ -8,14 +8,19 @@
    ▀████▀ ██  ██ ▀█████ ██   ██  ██   ██ ▀█████   ▀███▀██▄██  ▀███▀
 ```
 
-![GHOST1O1](https://img.shields.io/badge/GHOST1O1-NOCTURNE-e63946?style=for-the-badge&logo=ghost&logoColor=white)
+![GHOST1O1](https://img.shields.io/badge/GHOST1O1-L'EVEIL_NOCTURNE-e63946?style=for-the-badge&logo=ghost&logoColor=white)
 ![Version](https://img.shields.io/badge/VERSION-3.0-00d4ff?style=for-the-badge)
 ![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-2ecc71?style=for-the-badge)
+![Engine](https://img.shields.io/badge/ENGINE-RECURSIVE_OSINT-9b59b6?style=for-the-badge)
 
-# 🔍 Quebec Ultimate
+# 🔍 QUEBEC ULTIMATE
 ## *Recursive OSINT Chain Engine*
 
-**Chaînage OSINT récursif · Corrélation ASN/Domain/Email/IP · Threat intelligence**
+**Pivot récursif d'OSINT : ASN → IP → domains → emails → leaks → cartographie complète.**
+
+[Hub](https://github.com/187Ghost101/ghost1o1) · [Tutorial](https://github.com/187Ghost101/ghost1o1/blob/main/tutorials/TUTORIAL_02_CARTOGRAPHIER.md) · [SECURITY](SECURITY.md)
+
+> *L'éveil commence par voir ce que personne ne regarde.*
 
 </div>
 
@@ -23,26 +28,28 @@
 
 ## 🔥 C'est quoi ?
 
-Quebec Ultimate est un **moteur de chaînage OSINT récursif** : à partir d'une seule entrée (domaine, IP, email, ASN), il explore en profondeur toutes les entités liées, puis recommence sur les nouvelles entités, jusqu'à 5 niveaux de profondeur.
+QUEBEC ULTIMATE est un **moteur de chaînage OSINT récursif**. À partir d'un point d'entrée unique (un email, un domaine, une IP, un pseudo), il pivote automatiquement à travers :
 
-**Cas d'usage :**
-- Cartographie d'infrastructure d'une cible
-- Threat intelligence (qui parle à qui)
-- Investigation d'email/username
-- Pivot entre identités numériques
-- Cartographie ASN/domaine/IP
+- **Whois** → registrar, contacts, dates
+- **DNS** → tous les records, subdomains
+- **ASN** → BGP, ranges IP, neighbours
+- **Certificats** → CT logs, subdomains cachés
+- **Leaks** → HIBP, dehashed.com, intelligenceX
+- **Social** → LinkedIn, GitHub, Twitter pivots
+- **Géolocalisation** → IP → ASN → région → data center
+- **Corrélation** → graphique de relations
 
 ---
 
 ## ✨ Features
 
-- 🔄 **Chaînage récursif** : 5 niveaux de profondeur
-- 🌐 **Multi-source** : Shodan, Censys, VirusTotal, HIBP, Hunter.io
-- 📊 **Graph viz** : représentation ASCII des liens
-- 💾 **Cache intelligent** : pas de requêtes dupliquées
-- 📤 **Export multi-format** : JSON, GraphML, CSV, Mermaid
-- 🐧 **Multi-OS** : Linux, macOS, Windows, Termux
-- 🔌 **API REST** : intégration dans tes outils
+- **Chaînage récursif** : chaque résultat génère de nouvelles cibles
+- **Graph viz** : visualisation des relations (D3.js)
+- **Multi-source** : 15+ sources OSINT intégrées
+- **Cache intelligent** : évite les requêtes redondantes
+- **Rapport multi-format** : JSON, GraphML, Mermaid, HTML
+- **Mode passif strict** : aucun contact direct avec la cible
+- **API REST** : intégration avec d'autres outils GHOST1O1
 
 ---
 
@@ -52,55 +59,115 @@ Quebec Ultimate est un **moteur de chaînage OSINT récursif** : à partir d'une
 git clone https://github.com/187Ghost101/quebec-ultimate.git
 cd quebec-ultimate
 bash install.sh
-python3 main.py --target example.com --depth 3
+
+# Pivot depuis un email
+python3 quebec.py chain --email victim@target.com --depth 3
+
+# Pivot depuis un domaine
+python3 quebec.py chain --domain target.com --depth 2
+
+# Pivot depuis une IP
+python3 quebec.py chain --ip 192.168.1.77 --depth 2
+
+# Interface web
+python3 quebec.py web --port 8088
+firefox http://localhost:8088
 ```
 
 ---
 
-## 🎯 Usage rapide
+## 🎯 Cas d'usage
+
+### Cas 1 — Audit pre-engagement
 
 ```bash
-# À partir d'un domaine
-python3 main.py --target example.com --depth 3
+# Input : nom de domaine du client
+python3 quebec.py chain --domain client.com --depth 3 --output rapport_pre_engagement.html
+```
 
-# À partir d'une IP
-python3 main.py --target 8.8.8.8 --depth 2
+→ Tu obtiens : tous les subdomains exposés, les leaks connus, la cartographie réseau externe, les contacts techniques, et un **graphique de relations**.
 
-# À partir d'un email
-python3 main.py --target user@example.com --depth 2
+### Cas 2 — Investigation d'email
 
-# Export GraphML pour Gephi/Maltego
-python3 main.py --target example.com --depth 3 --format graphml --output graph.graphml
+```bash
+# Input : email de phishing reçu
+python3 quebec.py chain --email phishing@scammer.com --depth 4
+```
+
+→ Tu obtiens : les domaines associés, les autres emails, l'infra réseau, et des pistes pour le sinkhole/disclosure.
+
+### Cas 3 — Threat intelligence
+
+```bash
+# Input : IP d'un C2 connu
+python3 quebec.py chain --ip 198.51.100.42 --depth 3
+```
+
+→ Tu obtiens : l'ASN, les autres domaines/IPs sur cet ASN, les leaks, et des **patterns** d'infra réutilisables.
+
+---
+
+## 🏗️ Architecture
+
+```
+quebec-ultimate/
+├── core/
+│   ├── chain.py          # Moteur récursif
+│   ├── pivot.py          # Logique de pivot
+│   └── graph.py          # Construction du graph
+├── modules/
+│   ├── whois.py          # Whois lookup
+│   ├── dns.py            # DNS enumeration
+│   ├── asn.py            # BGP/ASN
+│   ├── certs.py          # CT logs
+│   ├── leaks.py          # HIBP, dehashed
+│   ├── social.py         # Social pivots
+│   └── geo.py            # Geolocation
+├── api/                  # REST API
+├── frontend/             # Web UI (D3 graph viz)
+├── data/                 # Cache + datasets
+└── docs/                 # Methodology
 ```
 
 ---
 
-## 📚 Documentation
+## 🔐 Légalité & Éthique
 
-- **[INSTALL.md](INSTALL.md)** — Installation par OS
-- **[USAGE.md](USAGE.md)** — Exemples détaillés
-- **[SECURITY.md](SECURITY.md)** — Éthique
-- **[CHANGELOG.md](CHANGELOG.md)** — Historique
+**OSINT = données publiquement accessibles.** Mais :
+
+- **Pas de scraping agressif** : respecter rate limits
+- **Pas d'accès à des données payantes** sans abonnement
+- **Pas de corrélation avec des données personnelles** au-delà du cadre légal
+- **RGPD** : si tu es en UE, anonymise après usage
+
+**Pour les investigations offensives :** autorisation écrite obligatoire, conservation des preuves, disclosure responsable.
+
+📜 **[SECURITY.md](SECURITY.md)**
 
 ---
 
-## 🔗 Liens
+## 🤝 Contribution
 
-- **Hub GHOST1O1** : [github.com/187Ghost101/ghost1o1](https://github.com/187Ghost101/ghost1o1)
-- **Protocole** : [PROTOCOL.md](https://github.com/187Ghost101/ghost1o1/blob/main/PROTOCOL.md)
+Recherché :
+- Nouveaux modules OSINT ( Shodan, Censys, FOFA, etc.)
+- Heuristiques de corrélation
+- Visualisations améliorées
+- Traductions
+
+📜 **[CONTRIBUTING.md](CONTRIBUTING.md)**
 
 ---
 
 ## 📜 Licence
 
-MIT — voir [LICENSE](LICENSE)
+**MIT License**
 
 ---
 
 <div align="center">
 
-### Forged in the dark by [ghost1o1](https://github.com/187Ghost101) — 2026
+**L'ÉVEIL NOCTURNE** · [ghost1o1](https://github.com/187Ghost101) — 2026
 
-*"There is no lock."*
+*There is no lock.*
 
 </div>
